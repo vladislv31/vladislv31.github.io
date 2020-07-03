@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="header__address">
+                    <p>Москва, ТЦ «Солнцево-Парк», ул. Лётчика Ульянина, д. 5<br>Время работы клуба: 06:00 - 01:00</p>
+                </div>
+                <div class="header__phone">
+                    <a href="tel:+74951504557">+7 (495) 150-45-57</a>
+                    <button class="btn btn-o">Позвоните мне</button>
+                </div>
+            </div>            
+        </div>
+    </header>
+
+    <main class="card-form">
+        <h1>Создайте свою фитнес карту</h1>
+        <div class="card-form__container">
+            <div class="progress-bar">
+                <div class="progress-bar__item current" data-id="1">
+                    <div class="second-border">
+                        <div class="progress-bar__dot"></div>
+                    </div>
+                    <span class="progress-bar__text">1 день бесплатно</span>
+                </div>
+                <div class="progress-bar__item" data-id="2">
+                    <div class="second-border">
+                        <div class="progress-bar__dot"></div>
+                    </div>
+                    <span class="progress-bar__text">3 дня бесплатно</span>
+                </div>
+                <div class="progress-bar__item" data-id="3">
+                    <div class="second-border">
+                        <div class="progress-bar__dot"></div>
+                    </div>
+                    <span class="progress-bar__text">5 дней бесплатно</span>
+                </div>
+                <div class="progress-bar__item" data-id="4">
+                    <div class="second-border">
+                        <div class="progress-bar__dot"></div>
+                    </div>
+                    <span class="progress-bar__text">7 дней бесплатно</span>
+                </div>
+                <div class="progress-bar__item" data-id="5">
+                    <div class="second-border">
+                        <div class="progress-bar__dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab current" data-id="1">
+                    <h2>Буду ходить на тренировки</h2>
+                    <ul class="big-buttons">
+                        <li class="next-tab" data-action="set-with" data-id="1">один / одна</li>
+                        <li class="next-tab" data-action="set-with" data-id="1">с друзьями</li>
+                        <li class="next-tab" data-action="set-with" data-id="1">с семьей</li>
+                    </ul>
+                </div>
+                <div class="tab" data-id="2">
+                    <h2>На тренировки удобно ходить</h2>
+                    <ul class="big-buttons">
+                        <li class="next-tab" data-action="set-time" data-id="2">днем</li>
+                        <li class="next-tab" data-action="set-time" data-id="2">в любое время</li>
+                    </ul>
+                    <div class="tab__bottom">
+                        <a href="#" class="prev-tab back-tab" data-id="2">вернуться</a>
+                    </div>
+                </div>
+                <div class="tab" data-id="3">
+                    <h2>Планирую тренироваться</h2>
+                    <ul class="big-buttons">
+                        <li class="next-tab" data-action="set-plan" data-id="3">3 месяца</li>
+                        <li class="next-tab" data-action="set-plan" data-id="3">6 месяцев</li>
+                        <li class="next-tab" data-action="set-plan" data-id="3">12 месяцев</li>
+                    </ul>
+                    <div class="tab__bottom">
+                        <a href="#" class="prev-tab back-tab" data-id="3">вернуться</a>
+                    </div>
+                </div>
+                <div class="tab" data-id="4">
+                    <h2>Меня интересуют следующие направления</h2>
+                    <div class="directions">
+                        <div class="directions__col">
+                            <p><input type="checkbox" value="кардио программы" id="1"><label for="1">кардио программы</label></p>
+                            <p><input type="checkbox" value="тренажерный зал" id="2"><label for="2">тренажерный зал</label></p>
+                            <p><input type="checkbox" value="детский фитнес" id="3"><label for="3">детский фитнес</label></p>
+                            <p><input type="checkbox" value="единоборства" id="4"><label for="4">единоборства</label></p>
+                            <p><input type="checkbox" value="школа бокса" id="5"><label for="5">школа бокса</label></p>
+                            <p><input type="checkbox" value="хип-хоп" id="6"><label for="6">хип-хоп</label></p>
+                        </div>
+                        <div class="directions__col">
+                            <p><input type="checkbox" value="профессиональная подготовка(бокс, самбо)" id="7"><label for="7">профессиональная подготовка(бокс, самбо)</label></p>
+                            <p><input type="checkbox" value="функциональный тренинг(кроссфит, TRX)" id="8"><label for="8">функциональный тренинг(кроссфит, TRX)</label></p>
+                            <p><input type="checkbox" value="силовыние тренировки" id="9"><label for="9">силовыние тренировки</label></p>
+                            <p><input type="checkbox" value="самбо" id="10"><label for="10">самбо</label></p>
+                            <p><input type="checkbox" value="танцы" id="11"><label for="11">танцы</label></p>
+                        </div>
+                    </div>
+                    <div class="tab__bottom">
+                        <a href="#" class="btn next-tab" data-action="set-directions" data-id="4">Я выбрал</a><br>
+                        <a href="#" class="prev-tab back-tab" data-id="4">вернуться</a>
+                    </div>
+                </div>
+                <div class="tab" data-id="5">
+                    <div class="form">
+                        <div class="form__col">
+                            <h2>Мои контактные данные</h2>
+                            <form action="">
+                                <label for="name">меня зовут</label>
+                                <div class="input" data-name="name"><input type="text" name="name" id="name" required></div>
+                                <label for="phone">звоните на номер</label>
+                                <div class="input" data-name="phone"><input type="text" name="phone" id="phone" required></div>
+                                <label for="email">а письма пишите сюда</label>
+                                <div class="input" data-name="email"><input type="text" name="email" id="email" required></div>
+                                <button type="submit" class="btn submit-card">Оставить заявку</button>
+                                <p class="back-tab-btn"><a href="#" class="prev-tab back-tab" data-id="5">вернуться</a></p>
+                            </form>
+                            <h3 class="ywg-fc">После получения вашей заявки, вы гарантированно получите<br><span>7 бесплатных посещений</span></h3>
+                        </div>
+                        <div class="form__col">
+                            <h2>Выберите свою карту</h2>
+                            <div class="card-images">
+                                <img src="img/cards/alpha.svg" class="active" data-card="alpha" alt="">
+                                <img src="img/cards/basic.svg" data-card="basic" alt="">
+                            </div>
+                            <div class="cards-info">
+                                <div class="card card-alpha showed">
+                                    <p>В карту <span>Альфа</span> включено</p>
+                                    <ul>
+                                        <li><span class="freeze"></span> дней заморозки</li>
+                                        <li><span class="solliar"></span> минут соллярия</li>
+                                        <li><span class="massage"></span> минут массажа</li>
+                                        <li>Полотенца: <span class="towels"></span></li>
+                                    </ul>
+                                    <p class="card-price">Стоимость карты - <span>29 900</span> ₽</p>
+                                </div>
+                                <div class="card card-basic">
+                                    <p>В карту <span>Базовая</span> включено</p>
+                                    <ul>
+                                        <li><span class="freeze"></span> дней заморозки</li>
+                                        <li><span class="solliar"></span> минут соллярия</li>
+                                        <li><span class="massage"></span> минут массажа</li>
+                                        <li>Полотенца: <span class="towels"></span></li>
+                                    </ul>
+                                    <p class="card-price">Стоимость карты - <span>29 900</span> ₽</p>
+                                </div>
+                            </div>
+                            <h3 class="ywg-sc">После получения вашей заявки, вы гарантированно<br>получите <span>7 бесплатных посещений</span></h3>
+                        </div>
+                    </div>
+                    <p class="consent">Нажимая кнопку «Оставить заявку» я соглашаюсь  с политикой конфиденциальности и даю согласие на обработку персональных данных</p>
+                </div>
+                <div class="tab last-tab">
+                    <h2>поздравляем <span class="user-name">Имя</span>! Вы уже почти получили карту<br>В ближайшее время с вами свяжется менеджер</h2>
+                    <a href="#" class="btn">На основной сайт</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

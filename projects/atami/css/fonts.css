@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "opensans-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "opensans-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot");
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular/MontserratRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/MontserratBold/MontserratBold.eot");
+  src: url("../fonts/MontserratBold/MontserratBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratBold/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold/MontserratBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/MontserratSemibold/MontserratSemibold.eot");
+  src: url("../fonts/MontserratSemibold/MontserratSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratSemibold/MontserratSemibold.woff") format("woff"), url("../fonts/MontserratSemibold/MontserratSemibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/MontserratMedium/MontserratMedium.eot");
+  src: url("../fonts/MontserratMedium/MontserratMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratMedium/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium/MontserratMedium.ttf") format("truetype");
+}

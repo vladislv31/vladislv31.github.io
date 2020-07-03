@@ -1,0 +1,223 @@
+extends ../layout/parsing
+
+block variables
+	- var title = 'База объявлений';
+	- var pageClass = 'base-page';
+
+block content
+	.content-wrapper
+		.base-menu
+			.row.align-items-center.justify-content-between
+				.col-auto
+					.base-category.d-sm-flex.align-items-center
+						span Категория
+						.base-category_menu.add-box.d-flex
+							.select-menu
+								.selected Овсянка
+								.menu-list
+									ul
+										li Овсянка
+										li Пункт 1
+										li Пункт 2
+										li Пункт 3
+							.add-button
+									i.fas.fa-plus.plus
+									i.fas.fa-times.exit
+							.add-form
+									input(type="text")
+									button
+										i.fas.fa-plus
+				.col-auto
+					.base-download
+						span Скачать
+						a(href="#") XLSX
+						a(href="#") CSV
+						a(href="#") EXCEL
+				.col-lg-auto.col-12
+					button.btn.btn-green Сохранить в базу
+		.base-list
+			table
+				tr.list-titles
+					td Список объявлений
+					td Цена
+					td Телефон
+					td Удалить
+				tr.list-item
+					td
+						.item-info
+							.item-img
+							.item-text
+								h3 Заголовок
+								p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись проектах сбить текстов толку.
+					td(colspan="2")
+						table
+							tr
+								td
+									.item-price 5000
+								td
+									.item-phone 90056055606
+							tr
+								td(colspan="2")
+									.item-category
+										span Категория
+										.item-category_select.add-box
+											.select-menu
+												.selected Овсянка
+												.menu-list
+													ul
+														li Овсянка
+														li Пункт 1
+														li Пункт 2
+														li Пункт 3
+											.add-button
+												i.fas.fa-plus.plus
+												i.fas.fa-times.exit
+											.add-form
+												input(type="text")
+												button
+													i.fas.fa-plus
+					td
+						.item-remove
+							i.fas.fa-trash-alt
+				tr.list-item
+					td
+						.item-info
+							.item-img
+							.item-text
+								h3 Заголовок
+								p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись проектах сбить текстов толку.
+					td(colspan="2")
+						table
+							tr
+								td
+									.item-price 5000
+								td
+									.item-phone 90056055606
+							tr
+								td(colspan="2")
+									.item-category
+										span Категория
+										.item-category_select.add-box
+											.select-menu
+												.selected Овсянка
+												.menu-list
+													ul
+														li Овсянка
+														li Пункт 1
+														li Пункт 2
+														li Пункт 3
+											.add-button
+												i.fas.fa-plus.plus
+												i.fas.fa-times.exit
+											.add-form
+												input(type="text")
+												button
+													i.fas.fa-plus
+					td
+						.item-remove
+							i.fas.fa-trash-alt
+				tr.list-item
+					td
+						.item-info
+							.item-img
+							.item-text
+								h3 Заголовок
+								p Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись проектах сбить текстов толку.
+					td(colspan="2")
+						table
+							tr
+								td
+									.item-price 5000
+								td
+									.item-phone 90056055606
+							tr
+								td(colspan="2")
+									.item-category
+										span Категория
+										.item-category_select.add-box
+											.select-menu
+												.selected Овсянка
+												.menu-list
+													ul
+														li Овсянка
+														li Пункт 1
+														li Пункт 2
+														li Пункт 3
+											.add-button
+												i.fas.fa-plus.plus
+												i.fas.fa-times.exit
+											.add-form
+												input(type="text")
+												button
+													i.fas.fa-plus
+					td
+						.item-remove
+							i.fas.fa-trash-alt
+		.base-list_mobile
+			h4 Список объявлений
+			.list-item
+				.item-img
+				.item-text
+					h3 Заголовок объявления
+					p Описание объявления ,   Максимум 3  строки Максимум 3 строки
+				.item-info
+					.item-price
+						span Цена
+						span 5000
+					.item-phone
+						span Телефон
+						span 651657912654
+					.item-category
+						span Категория
+						.item-category_select.add-box
+							.select-menu
+								.selected Овсянка
+								.menu-list
+									ul
+										li Овсянка
+										li Пункт 1
+										li Пункт 2
+										li Пункт 3
+							.add-button
+								i.fas.fa-plus.plus
+								i.fas.fa-times.exit
+							.add-form
+								input(type="text")
+								button
+									i.fas.fa-plus
+				.item-remove
+					i.fas.fa-trash-alt
+			.list-item
+				.item-img
+				.item-text
+					h3 Заголовок объявления
+					p Описание объявления ,   Максимум 3  строки Максимум 3 строки
+				.item-info
+					.item-price
+						span Цена
+						span 5000
+					.item-phone
+						span Телефон
+						span 651657912654
+					.item-category
+						span Категория
+						.item-category_select.add-box
+							.select-menu
+								.selected Овсянка
+								.menu-list
+									ul
+										li Овсянка
+										li Пункт 1
+										li Пункт 2
+										li Пункт 3
+							.add-button
+								i.fas.fa-plus.plus
+								i.fas.fa-times.exit
+							.add-form
+								input(type="text")
+								button
+									i.fas.fa-plus
+				.item-remove
+					i.fas.fa-trash-alt
+
+	

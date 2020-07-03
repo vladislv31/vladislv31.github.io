@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>База объявлений</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="base-page">
+    <div class="wrapper">
+      <div class="top-line">
+        <div class="content-wrapper">
+          <div class="row justify-content-between">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-auto">
+              <div class="top-line_logo"><a href="#">Лого</a></div>
+            </div>
+            <div class="col-auto">
+              <div class="mobile-menu">
+                <div class="mobile-menu_button"><i class="fas fa-bars"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu_content">
+          <ul>
+            <li><a href="#">Парсинг</a></li>
+            <li><a href="#">Парсинг</a></li>
+            <li><a href="#">Настройки</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="content-wrapper">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <div class="menu_list">
+                <ul>
+                  <li><a class="active" href="#"><i class="fas fa-bars"></i><span>Парсинг</span></a></li>
+                  <li><a href="#"><i class="fas fa-list-ul"></i><span>База</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="menu_user"><a href="#"><i class="fas fa-sliders-h"></i><span>Настройки</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-info">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>Прогресс:</li>
+                <li>Всего объявлений: <span>220</span></li>
+                <li>Взято объявлений: <span>220</span></li>
+                <li>Автопоиск: Выкл</li>
+                <li>Статус: <span>Работа завершена</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-wrapper">
+          <div class="base-menu">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <div class="base-category d-sm-flex align-items-center"><span>Категория</span>
+                  <div class="base-category_menu add-box d-flex">
+                    <div class="select-menu">
+                      <div class="selected">Овсянка</div>
+                      <div class="menu-list">
+                        <ul>
+                          <li>Овсянка</li>
+                          <li>Пункт 1</li>
+                          <li>Пункт 2</li>
+                          <li>Пункт 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="base-download"><span>Скачать</span><a href="#">XLSX</a><a href="#">CSV</a><a href="#">EXCEL</a></div>
+              </div>
+              <div class="col-lg-auto col-12">
+                <button class="btn btn-green">Сохранить в базу</button>
+              </div>
+            </div>
+          </div>
+          <div class="base-list">
+            <table>
+              <tr class="list-titles">
+                <td>Список объявлений</td>
+                <td>Цена</td>
+                <td>Телефон</td>
+                <td>Удалить</td>
+              </tr>
+              <tr class="list-item">
+                <td>
+                  <div class="item-info">
+                    <div class="item-img"></div>
+                    <div class="item-text">
+                      <h3>Заголовок</h3>
+                      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись проектах сбить текстов толку.</p>
+                    </div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="item-price">5000</div>
+                      </td>
+                      <td>
+                        <div class="item-phone">90056055606</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <div class="item-category"><span>Категория</span>
+                          <div class="item-category_select add-box">
+                            <div class="select-menu">
+                              <div class="selected">Овсянка</div>
+                              <div class="menu-list">
+                                <ul>
+                                  <li>Овсянка</li>
+                                  <li>Пункт 1</li>
+                                  <li>Пункт 2</li>
+                                  <li>Пункт 3</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                            <div class="add-form">
+                              <input type="text">
+                              <button><i class="fas fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <div class="item-remove"><i class="fas fa-trash-alt"></i></div>
+                </td>
+              </tr>
+              <tr class="list-item">
+                <td>
+                  <div class="item-info">
+                    <div class="item-img"></div>
+                    <div class="item-text">
+                      <h3>Заголовок</h3>
+                      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись проектах сбить текстов толку.</p>
+                    </div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="item-price">5000</div>
+                      </td>
+                      <td>
+                        <div class="item-phone">90056055606</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <div class="item-category"><span>Категория</span>
+                          <div class="item-category_select add-box">
+                            <div class="select-menu">
+                              <div class="selected">Овсянка</div>
+                              <div class="menu-list">
+                                <ul>
+                                  <li>Овсянка</li>
+                                  <li>Пункт 1</li>
+                                  <li>Пункт 2</li>
+                                  <li>Пункт 3</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                            <div class="add-form">
+                              <input type="text">
+                              <button><i class="fas fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <div class="item-remove"><i class="fas fa-trash-alt"></i></div>
+                </td>
+              </tr>
+              <tr class="list-item">
+                <td>
+                  <div class="item-info">
+                    <div class="item-img"></div>
+                    <div class="item-text">
+                      <h3>Заголовок</h3>
+                      <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись проектах сбить текстов толку.</p>
+                    </div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="item-price">5000</div>
+                      </td>
+                      <td>
+                        <div class="item-phone">90056055606</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <div class="item-category"><span>Категория</span>
+                          <div class="item-category_select add-box">
+                            <div class="select-menu">
+                              <div class="selected">Овсянка</div>
+                              <div class="menu-list">
+                                <ul>
+                                  <li>Овсянка</li>
+                                  <li>Пункт 1</li>
+                                  <li>Пункт 2</li>
+                                  <li>Пункт 3</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                            <div class="add-form">
+                              <input type="text">
+                              <button><i class="fas fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <div class="item-remove"><i class="fas fa-trash-alt"></i></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="base-list_mobile">
+            <h4>Список объявлений</h4>
+            <div class="list-item">
+              <div class="item-img"></div>
+              <div class="item-text">
+                <h3>Заголовок объявления</h3>
+                <p>Описание объявления ,   Максимум 3  строки Максимум 3 строки</p>
+              </div>
+              <div class="item-info">
+                <div class="item-price"><span>Цена</span><span>5000</span></div>
+                <div class="item-phone"><span>Телефон</span><span>651657912654</span></div>
+                <div class="item-category"><span>Категория</span>
+                  <div class="item-category_select add-box">
+                    <div class="select-menu">
+                      <div class="selected">Овсянка</div>
+                      <div class="menu-list">
+                        <ul>
+                          <li>Овсянка</li>
+                          <li>Пункт 1</li>
+                          <li>Пункт 2</li>
+                          <li>Пункт 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-remove"><i class="fas fa-trash-alt"></i></div>
+            </div>
+            <div class="list-item">
+              <div class="item-img"></div>
+              <div class="item-text">
+                <h3>Заголовок объявления</h3>
+                <p>Описание объявления ,   Максимум 3  строки Максимум 3 строки</p>
+              </div>
+              <div class="item-info">
+                <div class="item-price"><span>Цена</span><span>5000</span></div>
+                <div class="item-phone"><span>Телефон</span><span>651657912654</span></div>
+                <div class="item-category"><span>Категория</span>
+                  <div class="item-category_select add-box">
+                    <div class="select-menu">
+                      <div class="selected">Овсянка</div>
+                      <div class="menu-list">
+                        <ul>
+                          <li>Овсянка</li>
+                          <li>Пункт 1</li>
+                          <li>Пункт 2</li>
+                          <li>Пункт 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-remove"><i class="fas fa-trash-alt"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer_menu">
+          <ul class="d-flex flex-sm-row flex-column justify-content-sm-around align-items-center">
+            <li><a href="#">Тех. поддержка</a></li>
+            <li><a href="#">Заголовок 5</a></li>
+            <li><a href="#">Заголовок 6</a></li>
+          </ul>
+        </div>
+        <div class="footer_cr">
+          <p>© 2010-2019 Обработка персональных данных 1. Пользовательское соглашение 2. Публичная оферта 3.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

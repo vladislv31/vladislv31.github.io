@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Парсинг</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="parsing-page">
+    <div class="wrapper">
+      <div class="top-line">
+        <div class="content-wrapper">
+          <div class="row justify-content-between">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-auto">
+              <div class="top-line_logo"><a href="#">Лого</a></div>
+            </div>
+            <div class="col-auto">
+              <div class="mobile-menu">
+                <div class="mobile-menu_button"><i class="fas fa-bars"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu_content">
+          <ul>
+            <li><a href="#">Парсинг</a></li>
+            <li><a href="#">Парсинг</a></li>
+            <li><a href="#">Настройки</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="content-wrapper">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <div class="menu_list">
+                <ul>
+                  <li><a class="active" href="#"><i class="fas fa-bars"></i><span>Парсинг</span></a></li>
+                  <li><a href="#"><i class="fas fa-list-ul"></i><span>База</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="menu_user"><a href="#"><i class="fas fa-sliders-h"></i><span>Настройки</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-info">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>Прогресс:</li>
+                <li>Всего объявлений: <span>220</span></li>
+                <li>Взято объявлений: <span>220</span></li>
+                <li>Автопоиск: Выкл</li>
+                <li>Статус: <span>Работа завершена</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-wrapper">
+          <div class="parsing-menu">
+            <div class="row no-gutters">
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="parsing-menu_category">
+                  <div class="parsing-menu_title">Категория</div>
+                  <div class="parsing-menu_select add-box">
+                    <div class="select-menu">
+                      <div class="selected">Овсянка</div>
+                      <div class="menu-list">
+                        <ul>
+                          <li>Овсянка</li>
+                          <li>Пункт 1</li>
+                          <li>Пункт 2</li>
+                          <li>Пункт 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-8 col-sm-6">
+                <div class="parsing-menu_params h-100 d-flex flex-column justify-content-between">
+                  <div class="parsing-menu_title">Что будем брать?</div>
+                  <div class="parsing-menu_checkboxes">
+                    <div class="checkbox active">Заголовок</div>
+                    <div class="checkbox active">Описание</div>
+                    <div class="checkbox active">Картинка</div>
+                    <div class="checkbox active">Телефон</div>
+                    <div class="checkbox">Цена</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="parsing-menu_links">
+                  <div class="parsing-menu_title">Ссылки для парсиннга</div>
+                  <div class="parsing-menu_textarea">
+                    <textarea placeholder="Вставьте ссылку  с авито .Каждая новая ссылка , добавляется с новой строки"></textarea>
+                  </div>
+                </div>
+                <div class="parsing-menu_button">
+                  <button class="btn btn-green">Старт</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer_menu">
+          <ul class="d-flex flex-sm-row flex-column justify-content-sm-around align-items-center">
+            <li><a href="#">Тех. поддержка</a></li>
+            <li><a href="#">Заголовок 5</a></li>
+            <li><a href="#">Заголовок 6</a></li>
+          </ul>
+        </div>
+        <div class="footer_cr">
+          <p>© 2010-2019 Обработка персональных данных 1. Пользовательское соглашение 2. Публичная оферта 3.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

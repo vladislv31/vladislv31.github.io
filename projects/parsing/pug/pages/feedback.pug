@@ -1,0 +1,71 @@
+extends ../layout/settings
+
+block variables
+	- var title = 'Тех. поддержка';
+	- var pageClass = 'feedback-page';
+
+block content
+	.content-wrapper
+		.row
+			.col-lg-3.col-md-4.col-sm-5
+				.sidebar
+					ul
+						li.active
+							a(href="#") Сбросить пароль
+						li
+							a(href="#") Тех. поддержка
+						li.li-dropdown
+							| Страницы
+							ul
+								li
+									a(href="#") Страница
+								li
+									a(href="#") Страница
+								li
+									a(href="#") Страница
+								li
+									a(href="#") Страница
+						li
+							a(href="#") Выйти
+			.col-lg-9.col-md-8.col-sm-7.col-12
+				.feedback-form
+					.form-title.d-flex.flex-sm-column.flex-md-row.flex-column
+						h2 Тех. поддержка
+						p.d-md-block.d-lg-none Возникли сложности с использованием сайта? Заполните форму слева и опишите ваш вопрос.
+					form(action="")
+						.row
+							.col-lg-8
+								.row
+									.col-sm-12
+										.row.justify-content-between.flex-sm-column.flex-md-row.flex-column
+											.small-input
+												label Ваш E-mail
+												input(type="text" required)
+											.small-input
+												label Ваше имя
+												input(type="text" required)
+									.col-sm-12
+										p Сообщение
+										textarea(required)
+								.row.justify-content-between
+									.col-md-6
+										p Прикрепите файл
+										.input-file
+											label(for="upload") Выберите файл
+											input#upload(type="file" multiple="true")
+										p Допустимые типы файлов: .jpg, .png, .gif, .pdf, .doc, .docx<br>Максимальный размер файла: 3 Мб
+									.col-md-auto
+										.captcha-block
+											.captcha Тут капча
+											.answer
+												input(type="text" placeholder="Ответ" required)
+								.row.justify-content-md-end.justify-content-sm-center.justify-content-center
+									.col-auto
+										button(type="submit").btn.btn-green.btn-wb Отправить
+							.col-sm-4.d-none.d-sm-none.d-md-none.d-lg-block
+								p Возникли сложности с использованием сайта? Заполните форму слева и опишите ваш вопрос.
+
+
+
+
+	

@@ -1,0 +1,25 @@
+extends ../layout/auth
+
+block variables
+	- var title = 'Авторизация';
+	- var pageClass = 'auth-page';
+
+block content
+	.content-wrapper
+		.auth
+			.auth-container
+				.auth-title
+					h3 Вход / Регистрация
+				.auth-form
+					form(action="")
+						input(type="text" placeholder="Введите логин" required)
+						input(type="text" placeholder="Введите пароль" required)
+						button.btn.btn-blue(type="submit") Войти
+				.auth-links
+					a(href="#") Забыли пароль?
+				.auth-info
+					p Регистрируясь на сайте, я соглашаюсь с условиями договора<br><a href='#'>Публичной оферты</a> и <a href='#'>Пользовательским соглашением</a>
+
+
+
+	

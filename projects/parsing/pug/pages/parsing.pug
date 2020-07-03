@@ -1,0 +1,50 @@
+extends ../layout/parsing
+
+block variables
+	- var title = 'Парсинг';
+	- var pageClass = 'parsing-page';
+
+block content
+	.content-wrapper
+		.parsing-menu
+			.row.no-gutters
+				.col-lg-3.col-md-4.col-sm-6
+					.parsing-menu_category
+						.parsing-menu_title Категория
+						.parsing-menu_select.add-box
+							.select-menu
+								.selected Овсянка
+								.menu-list
+									ul
+										li Овсянка
+										li Пункт 1
+										li Пункт 2
+										li Пункт 3
+							.add-button
+								i.fas.fa-plus.plus
+								i.fas.fa-times.exit
+							.add-form
+								input(type="text")
+								button
+									i.fas.fa-plus
+
+				.col-lg-9.col-md-8.col-sm-6
+					.parsing-menu_params.h-100.d-flex.flex-column.justify-content-between
+						.parsing-menu_title Что будем брать?
+						.parsing-menu_checkboxes
+							.checkbox.active Заголовок
+							.checkbox.active Описание
+							.checkbox.active Картинка
+							.checkbox.active Телефон
+							.checkbox Цена
+			.row
+				.col-12
+					.parsing-menu_links
+						.parsing-menu_title Ссылки для парсиннга
+						.parsing-menu_textarea
+							textarea(placeholder="Вставьте ссылку  с авито .Каждая новая ссылка , добавляется с новой строки")
+					.parsing-menu_button
+						button.btn.btn-green Старт
+
+
+	
