@@ -26,11 +26,12 @@ a.phone
     &::before
         content: ''
         position: absolute
-        width: 15px
-        height: 15px
-        background-image: url(../img/icons/phone.png)
+        width: 13px
+        height: 13px
+        background-image: url(../img/icons/phone.svg)
+        background-size: cover
         left: 0
-        top: 0
+        top: 2px
 
 .btn
     outline: none
@@ -93,25 +94,28 @@ p
     & > *
         margin: 0 15px
     &__search
-        width: 21px
-        height: 21px
-        display: block
-        background-image: url(../img/icons/search.png)
-    &__user
-        width: 16px
+        width: 20px
         height: 20px
         display: block
-        background-image: url(../img/icons/user.png)
+        background-image: url(../img/icons/search.svg)
+        background-size: cover
+    &__user
+        width: 20px
+        height: 20px
+        display: block
+        background-image: url(../img/icons/user.svg)
+        background-size: cover
 
 .cart
     display: flex
     align-items: center
     text-decoration: none
     &__icon
-        width: 16px
+        width: 20px
         height: 20px
         display: block
-        background-image: url(../img/icons/cart.png)
+        background-image: url(../img/icons/cart.svg)
+        background-size: cover
         margin-right: 10px
         position: relative
     &__count
@@ -300,8 +304,8 @@ p
         &::before
             content: ''
             position: absolute
-            top: 1.5px
-            left: 2px
+            top: calc(50% - 4px)
+            left: calc(50% - 4px)
             width: 8px
             height: 8px
             background-color: #ccc
@@ -330,6 +334,8 @@ p
         align-items: center
         justify-content: center
         margin-bottom: 20px
+        img
+            height: 100%
 
 .section
     margin-bottom: 120px
@@ -583,7 +589,7 @@ p
     &__slider-nav
         position: absolute
         right: 0
-        bottom: 15px
+        bottom: -30px
         a
             font-family: $btn-font
             text-decoration: none
@@ -665,6 +671,8 @@ p
                 background: transparent
                 border-left: none
                 padding: 12px 10px
+                img
+                    height: 20px
     &__copyright
         margin: 0 50px
         margin-top: 30px
