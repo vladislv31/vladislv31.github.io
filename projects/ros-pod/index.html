@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/grid.min.css">
+    <link rel="stylesheet" href="./css/all.min.css"> <!-- font awesome -->
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__close">
+                <div class="mobile-menu__close-bar"></div>
+                <div class="mobile-menu__close-bar"></div>
+            </div>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item mobile-menu__list-item__dropdown">
+                    <a href="#" class="mobile-menu__list-link">Каталог</a>
+                    <ul class="mobile-menu__list-item__dropdown-list">
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__list-item mobile-menu__list-item__dropdown">
+                    <a href="#" class="mobile-menu__list-link">Применение</a>
+                    <ul class="mobile-menu__list-item__dropdown-list">
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__list-item mobile-menu__list-item__dropdown">
+                    <a href="#" class="mobile-menu__list-link">О компании</a>
+                    <ul class="mobile-menu__list-item__dropdown-list">
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__list-item mobile-menu__list-item__dropdown">
+                    <a href="#" class="mobile-menu__list-link">Услуги</a>
+                    <ul class="mobile-menu__list-item__dropdown-list">
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                        <li class="mobile-menu__list-item__dropdown-list__item"><a href="" class="mobile-menu__list-item__dropdown-list__link">Link</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">Блог</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#" class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__menu">
+                <ul class="header__menu-ul">
+                    <li class="header__menu-li header__menu-li__dropdown">
+                        <a href="#" class="header__menu-a">Каталог</a>
+                        <ul class="header__menu-li__dropdown-ul">
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-li header__menu-li__dropdown">
+                        <a href="#" class="header__menu-a">Применение</a>
+                        <ul class="header__menu-li__dropdown-ul">
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для склада</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Промышленный</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Фасадный</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для магазина</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для кафе и ресторана</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для гостиницы</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для детского сада</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для коттеджа</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для дачи</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для кухни</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Для погреба</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-li header__menu-li__dropdown">
+                        <a href="#" class="header__menu-a">О компании</a>
+                        <ul class="header__menu-li__dropdown-ul">
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-li header__menu-li__dropdown">
+                        <a href="#" class="header__menu-a">Услуги</a>
+                        <ul class="header__menu-li__dropdown-ul">
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                            <li class="header__menu-li__dropdown-li"><a href="#" class="header__menu-li__dropdown-a">Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-li"><a href="#" class="header__menu-a">Блог</a></li>
+                </ul>
+            </div>
+            <div class="header__feed-back">
+                <a href="#" class="header__feed-back__link">Заказать звонок</a>
+            </div>
+            <div class="header__mobile-button">
+                <div class="header__mobile-button__bar"></div>
+                <div class="header__mobile-button__bar"></div>
+                <div class="header__mobile-button__bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="container">
+                <h1 class="hero__title">Грузовые и лифтовые подъёмники</h1>
+                <p class="hero__text">Изготавливаем надёжные грузовые подъёмники<br>с доставкой по всей России</p>
+                <div class="hero__buttons">
+                    <a href="#" class="btn hero__buttons-btn">Скачать каталог</a>
+                    <a href="#" class="btn btn--white hero__buttons-btn">Узнать стоимость</a>
+                </div>
+                <div class="hero__features">
+                    <div class="row">
+                        <div class="col-lg-3 col-6">
+                            <div class="hero__features-item">
+                                <div class="hero__features-item__icon">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.0007 4.33301C21.7154 4.33301 17.5264 5.60374 13.9633 7.9845C10.4002 10.3653 7.62317 13.7491 5.98327 17.7082C4.34337 21.6673 3.9143 26.0237 4.75031 30.2266C5.58633 34.4296 7.64988 38.2902 10.68 41.3203C13.7102 44.3505 17.5708 46.414 21.7737 47.25C25.9766 48.086 30.3331 47.657 34.2921 46.0171C38.2512 44.3772 41.6351 41.6001 44.0158 38.037C46.3966 34.474 47.6673 30.2849 47.6673 25.9997C47.6673 23.1544 47.1069 20.3369 46.0181 17.7082C44.9292 15.0795 43.3332 12.691 41.3213 10.679C39.3094 8.66709 36.9209 7.07114 34.2921 5.98228C31.6634 4.89343 28.846 4.33301 26.0007 4.33301ZM26.0007 43.333C22.5725 43.333 19.2212 42.3164 16.3708 40.4118C13.5203 38.5072 11.2987 35.8001 9.98675 32.6329C8.67483 29.4656 8.33157 25.9804 9.00038 22.6181C9.66919 19.2558 11.32 16.1673 13.7441 13.7432C16.1683 11.319 19.2568 9.66821 22.6191 8.9994C25.9814 8.33059 29.4666 8.67384 32.6338 9.98576C35.8011 11.2977 38.5082 13.5193 40.4128 16.3698C42.3174 19.2202 43.334 22.5715 43.334 25.9997C43.334 30.5968 41.5078 35.0056 38.2572 38.2562C35.0065 41.5068 30.5977 43.333 26.0007 43.333ZM32.7173 27.3647L28.1673 24.743V15.1663C28.1673 14.5917 27.9391 14.0406 27.5327 13.6343C27.1264 13.2279 26.5753 12.9997 26.0007 12.9997C25.426 12.9997 24.8749 13.2279 24.4686 13.6343C24.0623 14.0406 23.834 14.5917 23.834 15.1663V25.9997C23.834 25.9997 23.834 26.173 23.834 26.2597C23.8468 26.409 23.8834 26.5552 23.9423 26.693C23.9869 26.8216 24.0451 26.945 24.1157 27.0613C24.175 27.1845 24.2476 27.3007 24.3323 27.408L24.679 27.6897L24.874 27.8847L30.5073 31.1347C30.8375 31.3218 31.2111 31.419 31.5907 31.4163C32.0704 31.4197 32.5377 31.2637 32.9192 30.9729C33.3008 30.6821 33.575 30.2729 33.6989 29.8094C33.8229 29.3459 33.7895 28.8544 33.604 28.412C33.4185 27.9696 33.0914 27.6012 32.674 27.3647H32.7173Z" fill="#DC783F"/>
+                                    </svg>                                        
+                                </div>
+                                <h3 class="hero__features-item__text">Быстрые сроки<br>изготовления</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="hero__features-item">
+                                <div class="hero__features-item__icon">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45.2191 37.375L39.3475 27.235C40.549 25.0283 41.1749 22.5543 41.1675 20.0417C41.1675 16.0192 39.5696 12.1615 36.7253 9.31721C33.881 6.47291 30.0233 4.875 26.0008 4.875C21.9784 4.875 18.1207 6.47291 15.2764 9.31721C12.4321 12.1615 10.8341 16.0192 10.8341 20.0417C10.8267 22.5543 11.4526 25.0283 12.6541 27.235L6.78248 37.375C6.59194 37.705 6.49181 38.0794 6.49219 38.4605C6.49257 38.8416 6.59343 39.2158 6.78462 39.5454C6.97581 39.875 7.25055 40.1484 7.58112 40.338C7.9117 40.5275 8.28642 40.6265 8.66748 40.625H14.8858L18.0491 45.955C18.1558 46.1316 18.2871 46.2922 18.4391 46.4317C18.8408 46.8188 19.3763 47.0361 19.9341 47.0383H20.2375C20.5646 46.9936 20.8771 46.8746 21.1512 46.6907C21.4254 46.5066 21.6538 46.2624 21.8191 45.9767L26.0008 38.7833L30.1825 46.0417C30.3502 46.3234 30.5798 46.5634 30.8537 46.7435C31.1277 46.9237 31.439 47.0393 31.7641 47.0817H32.0675C32.6328 47.0851 33.1771 46.8674 33.5841 46.475C33.7299 46.3434 33.8541 46.1899 33.9525 46.02L37.1158 40.69H43.3341C43.7159 40.6915 44.0913 40.5921 44.4224 40.4019C44.7534 40.2116 45.0283 39.9373 45.2191 39.6067C45.4216 39.2697 45.5286 38.884 45.5286 38.4908C45.5286 38.0977 45.4216 37.712 45.2191 37.375ZM19.9125 40.69L17.9841 37.4617C17.7943 37.1414 17.525 36.8754 17.2025 36.6894C16.8799 36.5035 16.5148 36.4038 16.1425 36.4H12.3941L15.4925 31.0267C17.626 33.0826 20.3151 34.4685 23.2275 35.0133L19.9125 40.69ZM26.0008 30.875C23.8582 30.875 21.7637 30.2396 19.9821 29.0493C18.2006 27.8589 16.8121 26.1669 15.9921 24.1874C15.1722 22.2079 14.9576 20.0296 15.3756 17.9282C15.7936 15.8267 16.8254 13.8964 18.3405 12.3813C19.8556 10.8663 21.7859 9.8345 23.8873 9.41649C25.9888 8.99849 28.167 9.21302 30.1465 10.033C32.1261 10.8529 33.818 12.2415 35.0084 14.023C36.1988 15.8045 36.8341 17.899 36.8341 20.0417C36.8341 22.9148 35.6928 25.6703 33.6611 27.702C31.6295 29.7336 28.874 30.875 26.0008 30.875ZM35.8591 36.4C35.4868 36.4038 35.1217 36.5035 34.7992 36.6894C34.4766 36.8754 34.2074 37.1414 34.0175 37.4617L32.0891 40.69L28.7958 34.9483C31.698 34.3924 34.3771 33.0077 36.5091 30.9617L39.6075 36.335L35.8591 36.4Z" fill="#DC783F"/>
+                                    </svg>                                                           
+                                </div>
+                                <h3 class="hero__features-item__text">Гарантия на товар<br>5 лет</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="hero__features-item">
+                                <div class="hero__features-item__icon">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1673 30.333H19.5007C20.0753 30.333 20.6264 30.1047 21.0327 29.6984C21.439 29.2921 21.6673 28.741 21.6673 28.1663C21.6673 27.5917 21.439 27.0406 21.0327 26.6343C20.6264 26.2279 20.0753 25.9997 19.5007 25.9997H15.1673C14.5927 25.9997 14.0416 26.2279 13.6353 26.6343C13.2289 27.0406 13.0007 27.5917 13.0007 28.1663C13.0007 28.741 13.2289 29.2921 13.6353 29.6984C14.0416 30.1047 14.5927 30.333 15.1673 30.333ZM28.1673 34.6663H15.1673C14.5927 34.6663 14.0416 34.8946 13.6353 35.3009C13.2289 35.7073 13.0007 36.2584 13.0007 36.833C13.0007 37.4076 13.2289 37.9587 13.6353 38.3651C14.0416 38.7714 14.5927 38.9997 15.1673 38.9997H28.1673C28.742 38.9997 29.2931 38.7714 29.6994 38.3651C30.1057 37.9587 30.334 37.4076 30.334 36.833C30.334 36.2584 30.1057 35.7073 29.6994 35.3009C29.2931 34.8946 28.742 34.6663 28.1673 34.6663ZM41.1673 4.33301H10.834C9.11008 4.33301 7.45678 5.01783 6.23779 6.23681C5.0188 7.4558 4.33398 9.1091 4.33398 10.833V41.1663C4.33398 42.8903 5.0188 44.5436 6.23779 45.7625C7.45678 46.9815 9.11008 47.6663 10.834 47.6663H41.1673C42.8912 47.6663 44.5445 46.9815 45.7635 45.7625C46.9825 44.5436 47.6673 42.8903 47.6673 41.1663V10.833C47.6673 9.1091 46.9825 7.4558 45.7635 6.23681C44.5445 5.01783 42.8912 4.33301 41.1673 4.33301ZM30.334 8.66634V15.7947L27.0623 13.9747C26.7329 13.7845 26.3593 13.6844 25.979 13.6844C25.5987 13.6844 25.225 13.7845 24.8957 13.9747L21.6673 15.7947V8.66634H30.334ZM43.334 41.1663C43.334 41.741 43.1057 42.2921 42.6994 42.6984C42.2931 43.1047 41.742 43.333 41.1673 43.333H10.834C10.2593 43.333 9.70825 43.1047 9.30192 42.6984C8.89559 42.2921 8.66732 41.741 8.66732 41.1663V10.833C8.66732 10.2584 8.89559 9.70727 9.30192 9.30094C9.70825 8.89461 10.2593 8.66634 10.834 8.66634H17.334V19.4997C17.3363 19.8778 17.4375 20.2487 17.6275 20.5756C17.8176 20.9025 18.0899 21.174 18.4173 21.363C18.7467 21.5532 19.1203 21.6533 19.5007 21.6533C19.881 21.6533 20.2546 21.5532 20.584 21.363L26.0007 18.3513L31.439 21.3847C31.7628 21.5682 32.1284 21.6652 32.5007 21.6663C33.0753 21.6663 33.6264 21.4381 34.0327 21.0317C34.439 20.6254 34.6673 20.0743 34.6673 19.4997V8.66634H41.1673C41.742 8.66634 42.2931 8.89461 42.6994 9.30094C43.1057 9.70727 43.334 10.2584 43.334 10.833V41.1663Z" fill="#DC783F"/>
+                                    </svg>                                   
+                                </div>
+                                <h3 class="hero__features-item__text">Лучшие условия<br>по лизингу</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="hero__features-item">
+                                <div class="hero__features-item__icon">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.16602 27.0837V37.917C2.16602 38.4916 2.39429 39.0427 2.80062 39.4491C3.20695 39.8554 3.75805 40.0837 4.33268 40.0837H6.49935C6.49935 41.8076 7.18417 43.4609 8.40315 44.6799C9.62214 45.8988 11.2754 46.5837 12.9993 46.5837C14.7233 46.5837 16.3766 45.8988 17.5955 44.6799C18.8145 43.4609 19.4993 41.8076 19.4993 40.0837H32.4993C32.4993 41.8076 33.1842 43.4609 34.4032 44.6799C35.6221 45.8988 37.2754 46.5837 38.9993 46.5837C40.7233 46.5837 42.3766 45.8988 43.5955 44.6799C44.8145 43.4609 45.4993 41.8076 45.4993 40.0837H47.666C48.2406 40.0837 48.7917 39.8554 49.1981 39.4491C49.6044 39.0427 49.8327 38.4916 49.8327 37.917V11.917C49.8327 10.1931 49.1479 8.53978 47.9289 7.3208C46.7099 6.10181 45.0566 5.41699 43.3327 5.41699H23.8327C22.1088 5.41699 20.4555 6.10181 19.2365 7.3208C18.0175 8.53978 17.3327 10.1931 17.3327 11.917V16.2503H12.9993C11.9903 16.2503 10.995 16.4853 10.0925 16.9365C9.1899 17.3878 8.4048 18.043 7.79935 18.8503L2.59935 25.7837C2.53598 25.8778 2.485 25.9798 2.44768 26.087L2.31768 26.3253C2.22206 26.567 2.17068 26.8238 2.16602 27.0837ZM36.8327 40.0837C36.8327 39.6551 36.9598 39.2362 37.1978 38.8799C37.4359 38.5236 37.7743 38.2459 38.1702 38.0819C38.5661 37.9179 39.0018 37.875 39.422 37.9586C39.8423 38.0422 40.2284 38.2486 40.5314 38.5516C40.8344 38.8546 41.0408 39.2407 41.1244 39.661C41.208 40.0812 41.1651 40.5169 41.0011 40.9128C40.8371 41.3087 40.5594 41.6471 40.2031 41.8852C39.8468 42.1233 39.4279 42.2503 38.9993 42.2503C38.4247 42.2503 37.8736 42.0221 37.4673 41.6157C37.061 41.2094 36.8327 40.6583 36.8327 40.0837ZM21.666 11.917C21.666 11.3424 21.8943 10.7913 22.3006 10.3849C22.7069 9.9786 23.258 9.75033 23.8327 9.75033H43.3327C43.9073 9.75033 44.4584 9.9786 44.8647 10.3849C45.2711 10.7913 45.4993 11.3424 45.4993 11.917V35.7503H43.8093C43.2001 35.0801 42.4575 34.5445 41.6292 34.178C40.8009 33.8116 39.9051 33.6223 38.9993 33.6223C38.0936 33.6223 37.1978 33.8116 36.3695 34.178C35.5412 34.5445 34.7986 35.0801 34.1893 35.7503H21.666V11.917ZM17.3327 24.917H8.66602L11.266 21.4503C11.4678 21.1812 11.7295 20.9628 12.0304 20.8124C12.3312 20.662 12.663 20.5837 12.9993 20.5837H17.3327V24.917ZM10.8327 40.0837C10.8327 39.6551 10.9598 39.2362 11.1978 38.8799C11.4359 38.5236 11.7743 38.2459 12.1702 38.0819C12.5661 37.9179 13.0018 37.875 13.422 37.9586C13.8423 38.0422 14.2284 38.2486 14.5314 38.5516C14.8344 38.8546 15.0408 39.2407 15.1244 39.661C15.208 40.0812 15.1651 40.5169 15.0011 40.9128C14.8371 41.3087 14.5594 41.6471 14.2031 41.8852C13.8468 42.1233 13.4279 42.2503 12.9993 42.2503C12.4247 42.2503 11.8736 42.0221 11.4673 41.6157C11.061 41.2094 10.8327 40.6583 10.8327 40.0837ZM6.49935 29.2503H17.3327V35.2737C16.054 34.1309 14.3755 33.5397 12.6628 33.629C10.9502 33.7183 9.34228 34.4808 8.18935 35.7503H6.49935V29.2503Z" fill="#DC783F"/>
+                                    </svg>                                  
+                                </div>
+                                <h3 class="hero__features-item__text">Отгрузка в течении<br>одной недели</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+        <div class="container">
+            <div class="catalog__blocks">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <h2 class="catalog__title section__title">Каталог</h2>
+                        <p class="catalog__subtitle section__subtitle">Выберите какой тип подъемника<br>подходит именно вам</p>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Шахтный подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 300 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 30 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 180 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/lift.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Мачтовый подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 300 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 30 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 180 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/lift.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Сервисный подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 300 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 30 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 120 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/elevator.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Ножничный стол</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 5 т</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 15 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 150 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/scissor-lift.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Цепной подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 500 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 25 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 130 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/wheel.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Мини-подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 250 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 12 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 120 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/lifting.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Инвалидный подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 250 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 12 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 65 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/disabled.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="#" class="catalog__block">
+                            <h3 class="catalog__block-title">Коттеджный подъёмник</h3>
+                            <div class="catalog__block-container">
+                                <div class="catalog__block-main">
+                                    <div class="catalog__block-properties">
+                                        <div class="catalog__block-property">Грузоподъёмность — <span>до 500 кг</span></div>
+                                        <div class="catalog__block-property">Высота подъёма — <span>до 10 м</span></div>
+                                    </div>
+                                    <div class="catalog__block-price">от 100 000 ₽</div>
+                                    <img class="catalog__block-img" src="./img/catalog/people.png">
+                                </div>
+                                <div class="catalog__block-text">
+                                    <p class="catalog__block-text__p">Консольный (мачтовый) подъёмник предназначен для вертикального перемещения разногабаритных грузов без участия человека.</p>
+                                    <div class="catalog__block-text__link">Подробнее</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__outro">
+                <div class="catalog__outro-text">Подъёмники разделяются не только по типу,<br>но и по месту применения</div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="catalog__outro-item">
+                            <h3 class="catalog__outro-item__title">Для склада</h3>
+                            <div class="catalog__outro-item__price">от 120 000 ₽</div>
+                            <div class="catalog__outro-item__link">
+                                <div class="catalog__outro-item__link-a">Подробнее</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="catalog__outro-item">
+                            <h3 class="catalog__outro-item__title">Промышленные</h3>
+                            <div class="catalog__outro-item__price">от 190 000 ₽</div>
+                            <div class="catalog__outro-item__link">
+                                <div class="catalog__outro-item__link-a">Подробнее</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="catalog__outro-item">
+                            <h3 class="catalog__outro-item__title">Фасадные</h3>
+                            <div class="catalog__outro-item__price">от 120 000 ₽</div>
+                            <div class="catalog__outro-item__link">
+                                <div class="catalog__outro-item__link-a">Подробнее</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="catalog__outro-button">
+                            <a href="#" class="btn">Смотреть все</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section works" id="works">
+        <div class="container">
+            <h2 class="works__title section__title">Реализованные проекты</h2>
+            <p class="works__subtitle section__subtitle">Посмотрите на наши выполненные работы</p>
+            <div class="works__items">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="works__item" href="#" style="background-image: url(./img/works/1.jpg);">
+                            <div class="works__item-text">
+                                <h3 class="works__item-title">Монтаж подъёмника 9 метров</h3>
+                                <div class="works__item-properties">
+                                    <div class="works__item-property">Изготовление - <span>8 дней</span></div>
+                                    <div class="works__item-property">Доставка и монтаж - <span>4 дней</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="works__item" href="#" style="background-image: url(./img/works/2.jpg);">
+                            <div class="works__item-text">
+                                <h3 class="works__item-title">Монтаж подъёмника 9 метров</h3>
+                                <div class="works__item-properties">
+                                    <div class="works__item-property">Изготовление - <span>8 дней</span></div>
+                                    <div class="works__item-property">Доставка и монтаж - <span>4 дней</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section blog" id="blog">
+        <div class="container">
+            <h2 class="blog__title section__title">Расскажем от подъёмниках</h2>
+            <p class="blog__subtitle section__subtitle">Информация о грузоподъёмниках, которая может вам пригодиться</p>
+            <div class="blog__items">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog__item">
+                            <div class="blog__item-img" style="background-image: url(./img/blog/1.jpg);">
+                                <h3 class="blog__item-title">Как выбрать подъёмник</h3>
+                            </div>
+                            <p class="blog__item-descr">Nisi proident consequat qui aute cupidatat incididunt ut nisi anim ea laborum culpa duis nulla. Esse irure mollit esse dr… <a href="#" class="blog__item-link">(Читать далее)</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog__item">
+                            <div class="blog__item-img" style="background-image: url(./img/blog/2.jpg);">
+                                <h3 class="blog__item-title">Какая грузоподъёмность нужна для кафе</h3>
+                            </div>
+                            <p class="blog__item-descr">Nisi proident consequat qui aute cupidatat incididunt ut nisi anim ea laborum culpa duis nulla. Esse irure mollit esse dr… <a href="#" class="blog__item-link">(Читать далее)</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__link">
+                <a href="#" class="blog__link-a">Смотреть больше</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark calculator" id="calculator">
+        <div class="container">
+            <h2 class="section__title calculator__title">Узнайте цену подъёмника</h2>
+            <form class="calculator__form">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="calculator__form-control">
+                            <div class="calculator__form-title">Тип подъёмника</div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="shakhtnuy" value="shakhtnuy" class="calculator__form-radio" checked>
+                                <label for="shakhtnuy" class="calculator__form-label">Шахтный</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="machtovuy" value="machtovuy" class="calculator__form-radio">
+                                <label for="machtovuy" class="calculator__form-label">Мачтовый</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="servisnuy" value="servisnuy" class="calculator__form-radio">
+                                <label for="servisnuy" class="calculator__form-label">Сервисный</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="nozhnichnuy-stol" value="nozhnichnuy-stol" class="calculator__form-radio">
+                                <label for="nozhnichnuy-stol" class="calculator__form-label">Ножничный стол</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="cepnoy" value="cepnoy" class="calculator__form-radio">
+                                <label for="cepnoy" class="calculator__form-label">Цепной</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="mini" value="mini" class="calculator__form-radio">
+                                <label for="mini" class="calculator__form-label">Мини</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="invalidnuy" value="invalidnuy" class="calculator__form-radio">
+                                <label for="invalidnuy" class="calculator__form-label">Инвалидный</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="type" id="kottedjnuy" value="kottedjnuy" class="calculator__form-radio">
+                                <label for="kottedjnuy" class="calculator__form-label">Коттеджный</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="calculator__form-control">
+                            <div class="calculator__form-title">Грузоподъёмность</div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="capacity" id="do-100-kg" value="do-100-kg" class="calculator__form-radio" checked>
+                                <label for="do-100-kg" class="calculator__form-label">до 100 кг</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="capacity" id="do-250-kg" value="do-250-kg" class="calculator__form-radio">
+                                <label for="do-250-kg" class="calculator__form-label">до 250 кг</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="capacity" id="do-500-kg" value="do-500-kg" class="calculator__form-radio">
+                                <label for="do-500-kg" class="calculator__form-label">до 500 кг</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="capacity" id="do-1000-kg" value="do-1000-kg" class="calculator__form-radio">
+                                <label for="do-1000-kg" class="calculator__form-label">до 1000 кг</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="capacity" id="do-2-t" value="do-2-t" class="calculator__form-radio">
+                                <label for="do-2-t" class="calculator__form-label">до 2 т</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="capacity" id="ot-2-t" value="ot-2-t" class="calculator__form-radio">
+                                <label for="ot-2-t" class="calculator__form-label">более 2 т</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="calculator__form-control">
+                            <div class="calculator__form-title">Место установки</div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="place" id="out-build" value="out-build" class="calculator__form-radio" checked>
+                                <label for="out-build" class="calculator__form-label">Снаружи здания</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="place" id="in-build" value="in-build" class="calculator__form-radio">
+                                <label for="in-build" class="calculator__form-label">Внутри здания</label>
+                            </div>
+                        </div>
+                        <div class="calculator__form-control">
+                            <div class="calculator__form-title">Число установок</div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="count" id="count-two" value="count-two" class="calculator__form-radio" checked>
+                                <label for="count-two" class="calculator__form-label">2</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="count" id="count-three" value="count-three" class="calculator__form-radio">
+                                <label for="count-three" class="calculator__form-label">3</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="count" id="count-four" value="count-four" class="calculator__form-radio">
+                                <label for="count-four" class="calculator__form-label">4</label>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="radio" name="count" id="count-five-more" value="count-five-more" class="calculator__form-radio">
+                                <label for="count-five-more" class="calculator__form-label">5 и более</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="calculator__form-control">
+                            <div class="calculator__form-box">
+                                <label for="name" class="calculator__form-input__label">Имя</label>
+                                <input type="text" name="name" id="name" class="calculator__form-input" placeholder="Введите имя">
+                            </div>
+                            <div class="calculator__form-box">
+                                <label for="phone" class="calculator__form-input__label">Телефон</label>
+                                <input type="text" name="phone" id="phone" class="calculator__form-input phone-mask-js" placeholder="Введите телефон">
+                            </div>
+                            <div class="calculator__form-box">
+                                <label for="mail" class="calculator__form-input__label">Электронная почта</label>
+                                <input type="text" name="mail" id="mail" class="calculator__form-input email-mask-js" placeholder="Введите почту">
+                            </div>
+                            <div class="calculator__form-box">
+                                <button type="submit" class="btn calculator__form-button">Рассчитать цену</button>
+                            </div>
+                            <div class="calculator__form-box">
+                                <input type="checkbox" class="calculator__form-checkbox" name="agree" id="agree" checked>
+                                <label for="agree" class="calculator__form-label">Согласие на обработку данных</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section procedure" id="procedure">
+        <div class="container">
+            <h3 class="procedure__title section__title">Порядок работы</h3>
+            <p class="procedure__subtitle section__subtitle">Узнайте стадии взаимодействия с нами для сотрудничества</p>
+            <div class="procedure__items">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <a href="#" class="procedure__item">
+                            <img src="./img/procedure/1.jpg" alt="" class="procedure__item-img">
+                            <div class="procedure__item-text">
+                                <h3 class="procedure__item-title">Заявка</h3>
+                                <p class="procedure__item-descr">Оставьте заявку любым удобным способом или позвоните по телефону</p>
+                            </div>
+                            <div class="procedure__item-link">Оставить заявку</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a href="#" class="procedure__item">
+                            <img src="./img/procedure/2.jpg" alt="" class="procedure__item-img">
+                            <div class="procedure__item-text">
+                                <h3 class="procedure__item-title">Встреча</h3>
+                                <p class="procedure__item-descr">Подписываем договор после обсуждения проекта и произведения необходимых замеров</p>
+                            </div>
+                            <div class="procedure__item-link">Подробнее</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a href="#" class="procedure__item">
+                            <img src="./img/procedure/3.jpg" alt="" class="procedure__item-img">
+                            <div class="procedure__item-text">
+                                <h3 class="procedure__item-title">Изготовление</h3>
+                                <p class="procedure__item-descr">Работа выполняется к назначенному времени, согласно договору</p>
+                            </div>
+                            <div class="procedure__item-link">Подробнее</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a href="#" class="procedure__item">
+                            <img src="./img/procedure/4.jpg" alt="" class="procedure__item-img">
+                            <div class="procedure__item-text">
+                                <h3 class="procedure__item-title">Монтаж</h3>
+                                <p class="procedure__item-descr">Монтируем и запускаем оборудование на вашей площадке</p>
+                            </div>
+                            <div class="procedure__item-link">Подробнее</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section questions" id="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="section__title questions__title">Ответы на вопросы</h2>
+                    <p class="section__subtitle questions__subtitle">Не нашли ответ на свой вопрос,<br>задайте его нашему специалисту</p>
+                    <a href="#" class="btn questions__button">Задать вопрос</a>
+                </div>
+                <div class="col-lg-8">
+                    <div class="questions__items">
+                        <div class="questions__item">
+                            <h3 class="questions__item-title">Можно ли использовать подъёмник вместо грузового лифта?</h3>
+                            <p class="questions__item-text">Конечно, подъёмник будет хорошей альтернативой лифту.Большинство грузовых подъёмников не нужно регистрировать в Ростехнадзоре, также легче производить их монтаж.Единственное, в лифте можно перевозить как груз, так и людей, но из-за этого он стоит в среднем дороже.</p>
+                        </div>
+                        <div class="questions__item">
+                            <h3 class="questions__item-title">Какому подъёмнику отдать предпочтение: шахтному или мачтовому?</h3>
+                            <p class="questions__item-text">Более экономичным вариантом будет мачтовый подъёмник, но он позволит работать с меньшими весами. В шахтном, плюсом выступает его несущая конструкция, в которую можно загрузить груз большего объёма.</p>
+                        </div>
+                        <div class="questions__item">
+                            <h3 class="questions__item-title">В течении какого времени после покупки я могу обращаться к вам по техническим вопросам?</h3>
+                            <p class="questions__item-text">Обращаться к нам вы можете в любой момент, хоть через год, хоть через два. Наши технические специалисты всегда на связи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section certs" id="certs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6 order-2 order-lg-1">
+                    <img src="./img/certs/1.jpg" alt="" class="certs__img">
+                </div>
+                <div class="col-lg-3 col-6 order-3 order-lg-2">
+                    <img src="./img/certs/2.jpg" alt="" class="certs__img">
+                </div>
+                <div class="col-lg-6 col-12 order-1 order-lg-3">
+                    <h2 class="section__title">Сертификаты и лицензии</h2>
+                    <p class="section__subtitle certs__subtitle">Документы, подтверждающие соответствие продукции<br>требованиям качества и безопасности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="contacts__text">
+                            <a class="logo logo--big contacts__logo">
+                                <img src="./img/logo.svg" alt="">
+                            </a>
+                            <h2 class="section__title contacts__title">Поможем выбрать<br>грузоподъёмник</h2>
+                            <p class="section__subtitle contacts__subtitle">Менеджер свяжется с вами в ближайшее время<br>и поможет в выборе</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="" class="contacts__form">
+                            <div class="contacts__form-control">
+                                <div class="contacts__form-box">
+                                    <label for="contacts_name" class="contacts__form-input__label">Имя</label>
+                                    <input type="text" name="name" id="contacts_name" class="contacts__form-input" placeholder="Введите имя">
+                                </div>
+                                <div class="contacts__form-box">
+                                    <label for="contacts_phone" class="contacts__form-input__label">Телефон</label>
+                                    <input type="text" name="phone" id="contacts_phone" class="contacts__form-input phone-mask-js" placeholder="Введите телефон">
+                                </div>
+                                <div class="contacts__form-box">
+                                    <label for="contacts_message" class="contacts__form-input__label">Опишите условия</label>
+                                    <textarea name="message" id="contacts_message" cols="30" rows="10" class="contacts__form-textarea"></textarea>
+                                </div>
+                                <div class="contacts__form-box">
+                                    <button type="submit" class="btn contacts__form-button">Получить консультацию</button>
+                                </div>
+                                <div class="contacts__form-box">
+                                    <input type="checkbox" class="contacts__form-checkbox" name="agree" id="contacts_agree" checked>
+                                    <label for="contacts_agree" class="contacts__form-label">Согласие на обработку данных</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section outro" id="outro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <img src="./img/outro.jpg" alt="" class="outro__img">
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                    <h2 class="section__title outro__title">Монтаж и доставка</h2>
+                    <p class="section__subtitle outro__subtitle">Как без проблем получить подъёмник и не<br>переживать об установке</p>
+                    <p class="outro__text">Предоставим команду специалистов-монтажников, чтобы собрать грузоподъёмное оборудование на вашем предприятии. При выборе нашей бригады вы получите гарантию на монтаж и техническое обслуживание от поставщика оборудования. Никаких хлопот с подготовкой фундамента, проводкой, сборкой конструкций и др. — все возьмём на себя.</p>
+                    <p class="outro__text">Наши специалисты обучены работать именно с нашим оборудованием, и их выбор будет оптимальным решением. Также вы можете провести монтаж самостоятельно со своей бригадой, но в этом случае монтажная гарантия не распространяется.</p>
+                    <div class="outro__link">
+                        <a href="#" class="outro__link-a">Подробнее</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <a class="logo logo--big footer__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <p class="footer__descr">Грузоподъёмники по всей России</p>
+                    <p class="footer__address">г. Самара, ул. Высоцкого, д. 3 офис 21</p>
+                    <div class="footer__socials">
+                        <div class="footer__socials-col">
+                            <a href="#" class="footer__socials-link"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="footer__socials-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__socials-link"><i class="fab fa-youtube"></i></i></a>
+                        </div>
+                        <div class="footer__socials-col">
+                            <a href="#" class="footer__socials-link"><i class="fab fa-telegram-plane"></i></i></a>
+                            <a href="#" class="footer__socials-link"><i class="fab fa-viber"></i></a>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__feedback">Заказать звонок</a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="footer__link">Каталог</a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Шахтный подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Мачтовый подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Сервисный подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Ножничный подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Цепной подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Мини подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Инвалидный подъёмник</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Коттеджный подъёмник</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="footer__link">Применение</a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для склада</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Промышленный</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Фасадный</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для магазина</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для кафе и ресторана</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для гостиницы</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для детского сада</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для коттеджа</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для дачи</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для кухни</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Для погреба</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="footer__link">Услуги</a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Лизинг</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Монтаж</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Доставка и гарантия</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="footer__link">О компании</a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Отзывы</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Проекты</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Лицензии</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="footer__link">Калькулятор</a>
+                    <a href="#" class="footer__link">Блог</a>
+                </div>
+                <div class="col-lg-3 d-lg-block d-none"></div>
+                <div class="col-lg-3 col-md-4">
+                    <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <a href="#" class="footer__bottom-link">Пользовательское соглашение</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <a class="footer__bottom-text">© 2021 OOO «РосПодъём»</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script>
+    <script src="./js/all.min.js"></script> <!-- font awesome -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

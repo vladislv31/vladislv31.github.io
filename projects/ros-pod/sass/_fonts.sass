@@ -1,0 +1,26 @@
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('truetype')
+
+@include font('Open Sans', normal, 200, '../fonts/OpenSans/OpenSans-Light.ttf')
+@include font('Open Sans', normal, 400, '../fonts/OpenSans/OpenSans-Regular.ttf')
+@include font('Open Sans', normal, 500, '../fonts/OpenSans/OpenSans-Medium.ttf')
+@include font('Open Sans', normal, 600, '../fonts/OpenSans/OpenSans-SemiBold.ttf')
+@include font('Open Sans', normal, 700, '../fonts/OpenSans/OpenSans-Bold.ttf')
+
+
+@include font('Oswald', normal, 400, '../fonts/Oswald/Oswald-Regular.ttf')
+@include font('Oswald', normal, 600, '../fonts/Oswald/Oswald-Bold.ttf')
+
+
+// @include font('Forum', normal, 400, '../fonts/Forum/Forum-Regular.ttf')
+
+// @include font('Noto Sans', normal, 400, '../fonts/Noto_Sans/NotoSans-Regular.ttf')
+// @include font('Noto Sans', italic, 400, '../fonts/Noto_Sans/NotoSans-Italic.ttf')
+// @include font('Noto Sans', normal, 700, '../fonts/Noto_Sans/NotoSans-Bold.ttf')
+// @include font('Noto Sans', italic, 700, '../fonts/Noto_Sans/NotoSans-BoldItalic.ttf')
+
+// @include font('Roboto', normal, 300, '../fonts/Roboto/Roboto-Regular.ttf')
