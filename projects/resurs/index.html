@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./libs/normalize.css">
+    <link rel="stylesheet" href="./libs/grid.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Ресурс</title>
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <div class="mobile-menu">
+            <div class="mobile-menu__overlay"></div>
+            <div class="mobile-menu__container">
+                <div class="mobile-menu__close">
+                    <div class="mobile-menu__close-bar"></div>
+                    <div class="mobile-menu__close-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-line-bg"></div>
+    
+        <header id="header" class="header">
+            <div class="wrapper">
+                <div class="header-container">
+                    <div class="header__menu-button">
+                        <img src="./img/menu-icon.png" alt="">
+                    </div>
+                    <a href="#" class="logo header__logo">
+                        <img src="./img/logo.png" alt="">
+                        <span>Экспертно-диагностический центр</span>
+                    </a>
+                    <a href="#" class="logo logo--descr header__logo-descr">
+                        <img src="./img/logo-descr.png" alt="">
+                    </a>
+                    <a href="#" class="logo logo--mobile header__logo-mobile">
+                        <img src="./img/logo-sign.png" alt="">
+                    </a>
+                    <div class="header__feedback">
+                        <div class="header__phone">8 812 702 56 43</div>
+                        <a href="#" class="header__feedback-link link">Обратный звонок</a>
+                    </div>
+                    <a href="#" class="header__write-us">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                            preserveAspectRatio="xMidYMid meet">
+                           
+                           <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                           fill="#000000" stroke="none">
+                           <path d="M655 4920 c-319 -35 -574 -268 -640 -585 -22 -105 -22 -2645 0 -2750
+                           49 -235 203 -427 419 -525 107 -49 174 -60 389 -67 l197 -6 0 -321 c0 -180 4
+                           -337 10 -356 5 -20 25 -51 45 -70 46 -45 125 -54 180 -21 20 12 253 189 518
+                           394 l482 372 1120 6 c1234 6 1164 2 1311 69 216 98 370 290 419 525 22 105 22
+                           2645 0 2750 -59 280 -264 495 -548 572 -57 16 -207 17 -1947 19 -1037 1 -1916
+                           -2 -1955 -6z m3887 -338 c110 -45 191 -129 240 -251 l23 -56 0 -1315 0 -1315
+                           -23 -56 c-49 -122 -130 -206 -240 -251 l-57 -23 -1155 -5 c-1050 -5 -1158 -7
+                           -1185 -22 -16 -9 -205 -152 -420 -317 l-390 -302 -5 263 c-6 294 -9 311 -80
+                           353 -32 18 -57 20 -325 25 -271 5 -294 7 -347 28 -110 44 -191 129 -240 251
+                           l-23 56 -3 1264 c-1 763 1 1292 7 1333 13 94 59 187 121 248 58 56 90 75 170
+                           101 52 17 158 18 1965 16 l1910 -2 57 -23z"/>
+                           </g>
+                           </svg>
+                        <span class="header__write-us__link link">Написать нам</span>
+                    </a>
+                    <div class="header__user">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M2335 4944 c-206 -34 -446 -137 -606 -258 -166 -126 -323 -312 -412
+-492 -47 -94 -100 -248 -123 -359 -26 -124 -26 -395 -1 -515 41 -193 112 -364
+216 -520 61 -92 204 -247 282 -307 58 -44 68 -35 -106 -88 -403 -124 -856
+-392 -1116 -661 -119 -124 -198 -255 -253 -419 -52 -154 -56 -209 -56 -706 l0
+-459 2401 0 2401 0 -5 483 c-4 443 -6 489 -25 567 -73 303 -218 510 -512 732
+-281 212 -570 361 -907 468 -73 23 -133 43 -133 44 0 2 36 33 79 69 238 199
+411 505 466 821 19 113 20 347 0 457 -105 604 -579 1065 -1179 1148 -103 15
+-312 12 -411 -5z m472 -389 c334 -85 612 -349 716 -680 172 -549 -157 -1135
+-718 -1281 -82 -21 -124 -26 -235 -27 -184 -2 -306 26 -465 105 -203 101 -366
+270 -465 481 -72 153 -85 218 -85 422 0 158 3 190 23 260 48 166 131 311 246
+432 172 182 368 278 641 317 70 10 247 -5 342 -29z m-32 -2386 c566 -42 1084
+-246 1497 -588 119 -99 176 -168 233 -286 67 -139 75 -192 75 -494 l0 -261
+-2026 0 -2026 0 5 277 c5 315 12 358 90 508 99 191 432 450 788 611 296 135
+589 206 974 237 93 8 259 6 390 -4z"/>
+</g>
+</svg>
+
+                    </div>
+                    <a href="#" class="header__search"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                       
+                       <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                       fill="#000000" stroke="none">
+                       <path d="M1851 5109 c-657 -74 -1219 -432 -1555 -989 -138 -229 -223 -463
+                       -273 -745 -26 -151 -23 -500 5 -655 120 -657 508 -1187 1087 -1487 310 -160
+                       591 -228 945 -227 431 0 785 107 1145 345 l119 79 696 -693 c469 -468 708
+                       -700 735 -713 54 -25 167 -25 215 0 120 63 175 193 135 317 -17 51 -54 91
+                       -717 755 l-699 701 77 114 c371 548 453 1234 222 1869 -75 208 -219 450 -375
+                       631 -260 300 -628 533 -1005 634 -230 62 -542 89 -757 64z m357 -510 c380 -41
+                       677 -182 943 -448 271 -271 415 -579 451 -963 32 -343 -60 -693 -263 -998 -84
+                       -127 -282 -325 -409 -409 -512 -341 -1143 -359 -1664 -47 -376 224 -641 602
+                       -728 1039 -32 160 -32 414 0 574 90 451 367 835 767 1062 267 152 604 223 903
+                       190z"/>
+                       </g>
+                       </svg>
+                       </a>
+                    <div class="header__search-menu">
+                        <form class="header__search-menu__form">
+                            <button type="submit"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                               
+                               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                               fill="#000000" stroke="none">
+                               <path d="M1851 5109 c-657 -74 -1219 -432 -1555 -989 -138 -229 -223 -463
+                               -273 -745 -26 -151 -23 -500 5 -655 120 -657 508 -1187 1087 -1487 310 -160
+                               591 -228 945 -227 431 0 785 107 1145 345 l119 79 696 -693 c469 -468 708
+                               -700 735 -713 54 -25 167 -25 215 0 120 63 175 193 135 317 -17 51 -54 91
+                               -717 755 l-699 701 77 114 c371 548 453 1234 222 1869 -75 208 -219 450 -375
+                               631 -260 300 -628 533 -1005 634 -230 62 -542 89 -757 64z m357 -510 c380 -41
+                               677 -182 943 -448 271 -271 415 -579 451 -963 32 -343 -60 -693 -263 -998 -84
+                               -127 -282 -325 -409 -409 -512 -341 -1143 -359 -1664 -47 -376 224 -641 602
+                               -728 1039 -32 160 -32 414 0 574 90 451 367 835 767 1062 267 152 604 223 903
+                               190z"/>
+                               </g>
+                               </svg>
+                               </button>
+                            <input type="text" placeholder="Введите текст поиска...">
+                            <div class="header__search-menu__form-exit">
+                                <img src="./img/exit-icon.png" alt="">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__mobile-descr">Экспертно-диагностический<br>центр</div>
+                </div>
+            </div>
+        </header>
+
+        <menu id="menu" class="menu">
+            <div class="wrapper">
+                <div class="menu-container">
+                    <ul class="menu__list">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Выполненные работы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Эксперты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <a href="#" class="menu__auth">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M2335 4944 c-206 -34 -446 -137 -606 -258 -166 -126 -323 -312 -412
+-492 -47 -94 -100 -248 -123 -359 -26 -124 -26 -395 -1 -515 41 -193 112 -364
+216 -520 61 -92 204 -247 282 -307 58 -44 68 -35 -106 -88 -403 -124 -856
+-392 -1116 -661 -119 -124 -198 -255 -253 -419 -52 -154 -56 -209 -56 -706 l0
+-459 2401 0 2401 0 -5 483 c-4 443 -6 489 -25 567 -73 303 -218 510 -512 732
+-281 212 -570 361 -907 468 -73 23 -133 43 -133 44 0 2 36 33 79 69 238 199
+411 505 466 821 19 113 20 347 0 457 -105 604 -579 1065 -1179 1148 -103 15
+-312 12 -411 -5z m472 -389 c334 -85 612 -349 716 -680 172 -549 -157 -1135
+-718 -1281 -82 -21 -124 -26 -235 -27 -184 -2 -306 26 -465 105 -203 101 -366
+270 -465 481 -72 153 -85 218 -85 422 0 158 3 190 23 260 48 166 131 311 246
+432 172 182 368 278 641 317 70 10 247 -5 342 -29z m-32 -2386 c566 -42 1084
+-246 1497 -588 119 -99 176 -168 233 -286 67 -139 75 -192 75 -494 l0 -261
+-2026 0 -2026 0 5 277 c5 315 12 358 90 508 99 191 432 450 788 611 296 135
+589 206 974 237 93 8 259 6 390 -4z"/>
+</g>
+</svg>
+
+                        <span class="menu__auth-link link link--white">Вход</span>
+                    </a>
+                </div>
+            </div>
+        </menu>
+
+        <div class="phone-mobile">
+            <div class="wrapper">
+                <div class="phone-mobile__container">
+                    <div class="phone-mobile__phone">8 812 702 56 43</div>
+                    <div class="phone-mobile__link">
+                        <a href="#" class="link">Обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="wrapper">
+                <div class="hero-slider">
+                    <div class="hero-slider-container">
+                        <div class="hero-slider__slide">
+                            <div class="hero-slider__slide-container">
+                                <div class="hero-slider__slide-img" style="background-image: url(../img/slide-img.png);"></div>
+                                <div class="hero-slider__slide-text">
+                                    <h2>Экспертиза промышленной безопасности</h2>
+                                    <div class="hero-slider__slide-descr">
+                                        <p><strong>Опыт работы: 10 лет</strong></p>
+                                        <p>Кратчайшие сроки и высокое качество</p>
+                                    </div>
+                                    <div class="hero-slider__slide-link">
+                                        <a href="" class="link">Подробнее об услуге</a>
+                                    </div>
+                                    <div class="hero-slider__slide-btn">
+                                        <a href="" class="btn"><?xml version="1.0" standalone="no"?>
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                             width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                             preserveAspectRatio="xMidYMid meet">
+                                            
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                            fill="#000000" stroke="none">
+                                            <path d="M4760 4415 c-47 -22 -270 -241 -1600 -1570 l-1545 -1545 -605 604
+                                            c-333 332 -621 612 -640 622 -49 26 -171 26 -223 0 -54 -27 -96 -72 -125 -135
+                                            -30 -65 -27 -142 8 -212 31 -62 1407 -1438 1469 -1469 25 -12 70 -25 102 -27
+                                            47 -5 66 -1 115 21 53 24 214 181 1706 1674 1493 1492 1650 1653 1674 1706 22
+                                            49 26 68 21 116 -12 132 -109 228 -242 237 -49 3 -70 0 -115 -22z"/>
+                                            </g>
+                                            </svg>
+                                             Отправить заявку на услугу</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-slider__slide">
+                            <div class="hero-slider__slide-container">
+                                <div class="hero-slider__slide-img" style="background-image: url(../img/slide-img.png);"></div>
+                                <div class="hero-slider__slide-text">
+                                    <h2>Экспертиза промышленной безопасности</h2>
+                                    <div class="hero-slider__slide-descr">
+                                        <p><strong>Опыт работы: 10 лет</strong></p>
+                                        <p>Кратчайшие сроки и высокое качество</p>
+                                    </div>
+                                    <div class="hero-slider__slide-link">
+                                        <a href="" class="link">Подробнее об услуге</a>
+                                    </div>
+                                    <div class="hero-slider__slide-btn">
+                                        <a href="" class="btn"><img src="./img/mark-icon.png" alt=""> Отправить заявку на услугу</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-slider__slide">
+                            <div class="hero-slider__slide-container">
+                                <div class="hero-slider__slide-img" style="background-image: url(../img/slide-img.png);"></div>
+                                <div class="hero-slider__slide-text">
+                                    <h2>Экспертиза промышленной безопасности</h2>
+                                    <div class="hero-slider__slide-descr">
+                                        <p><strong>Опыт работы: 10 лет</strong></p>
+                                        <p>Кратчайшие сроки и высокое качество</p>
+                                    </div>
+                                    <div class="hero-slider__slide-link">
+                                        <a href="" class="link">Подробнее об услуге</a>
+                                    </div>
+                                    <div class="hero-slider__slide-btn">
+                                        <a href="" class="btn"><img src="./img/mark-icon.png" alt=""> Отправить заявку на услугу</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slider-nav">
+                        <div class="hero-slider-nav__arrows">
+                            <div class="hero-slider-nav__prev-arrow"><img src="./img/arrow-icon.png" alt=""></div>
+                            <div class="hero-slider-nav__slide-num">1<span>1</span></div>
+                            <div class="hero-slider-nav__next-arrow"><img src="./img/arrow-icon.png" alt=""></div>
+                        </div>
+                        <div class="hero-slider-nav__line">
+                            <div class="hero-slider-nav__slider-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages top-line-mobile">
+            <div class="wrapper">
+                <div class="advantages-container">
+                    <div class="advantages__item">
+                        <img src="./img/advantages/experience.png" alt="" class="advantages__item-img">
+                        <div class="advantages__item-digit">10</div>
+                        <div class="advantages__item-text">Лет опыта<br> работы<br> на рынке</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="./img/advantages/specialists.png" alt="" class="advantages__item-img">
+                        <div class="advantages__item-digit">7</div>
+                        <div class="advantages__item-text">Опытных<br> специалистов<br> в штате</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="./img/advantages/success.png" alt="" class="advantages__item-img">
+                        <div class="advantages__item-digit">69</div>
+                        <div class="advantages__item-text">Успешно<br> выполненных<br> заказов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="wrapper">
+                <div class="services-container">
+                    <h2 class="services__title">Предоставляем услуги:</h2>
+                    <div class="services__items">
+                        <div class="services__item">
+                            <div class="services__item-icon"><img src="./img/services/1.png" alt=""></div>
+                            <a href="#" class="services__item-text"><strong>Экспертиза</strong> промышленной безопасности</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-icon"><img src="./img/services/2.png" alt=""></div>
+                            <a href="#" class="services__item-text">Техническое <strong>диагностирование</strong> объектов</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-icon"><img src="./img/services/3.png" alt=""></div>
+                            <a href="#" class="services__item-text"><strong>Обследование</strong> объектов котлонадзора</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-icon"><img src="./img/services/4.png" alt=""></div>
+                            <a href="#" class="services__item-text"><strong>Экспертиза</strong> промышленной документации</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-icon"><img src="./img/services/5.png" alt=""></div>
+                            <a href="#" class="services__item-text">Тепловизионное <strong>обследование</strong> объектов </a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-icon"><img src="./img/services/6.png" alt=""></div>
+                            <a href="#" class="services__item-text"><strong>Обследование</strong> зданий и сооружений</a>
+                        </div>
+                    </div>
+                    <div class="services__button">
+                        <a href="#" class="btn btn--small w-100"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                            preserveAspectRatio="xMidYMid meet">
+                           
+                           <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                           fill="#000000" stroke="none">
+                           <path d="M2455 5106 c-83 -20 -146 -56 -211 -120 -65 -66 -105 -137 -123 -224
+                           -8 -37 -11 -316 -11 -902 l0 -850 -850 0 c-586 0 -865 -3 -902 -11 -86 -18
+                           -158 -58 -224 -123 -177 -178 -177 -455 0 -631 66 -65 138 -105 224 -124 37
+                           -8 307 -11 902 -11 l850 0 0 -850 c0 -586 3 -865 11 -902 18 -87 58 -158 123
+                           -223 179 -178 455 -178 631 -1 65 66 105 138 124 224 8 37 11 307 11 902 l0
+                           850 850 0 c586 0 865 3 902 11 87 18 158 58 223 123 178 179 178 454 1 632
+                           -66 66 -144 108 -227 124 -31 6 -390 10 -900 10 l-849 0 0 850 c0 586 -3 865
+                           -11 902 -18 86 -58 158 -123 224 -114 114 -267 158 -421 120z"/>
+                           </g>
+                           </svg>
+                            Еще</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <div class="wrapper">
+                <h2 class="team__title">Наши специалисты:</h2>
+                <div class="team__items">
+                    <a href="#" class="team__item">
+                        <div class="team__item-img"><img src="./img/team/1.png" alt=""></div>
+                        <h4>Елизавета Шишкина</h4>
+                        <p>Стаж: 12 лет</p>
+                    </a>
+                    <a href="#" class="team__item">
+                        <div class="team__item-img"><img src="./img/team/2.png" alt=""></div>
+                        <h4>Евгений Запрыжанский</h4>
+                        <p>Стаж: 10 лет</p>
+                    </a>
+                    <a href="#" class="team__item">
+                        <div class="team__item-img"><img src="./img/team/3.png" alt=""></div>
+                        <h4>Ольга Ресурсная</h4>
+                        <p>Стаж: 26 лет</p>
+                    </a>
+                    <a href="#" class="team__item">
+                        <div class="team__item-button">
+                            <div class="team__item-button__icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                               
+                               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                               fill="#000000" stroke="none">
+                               <path d="M2492 5109 c-45 -13 -108 -80 -121 -126 -7 -26 -11 -392 -11 -1130
+                               l0 -1093 -1113 -2 -1113 -3 -41 -27 c-63 -41 -88 -90 -88 -169 0 -54 5 -72 27
+                               -106 15 -22 44 -51 65 -64 l38 -24 1112 -3 1113 -2 2 -1113 3 -1112 24 -38
+                               c13 -21 42 -50 64 -65 34 -23 52 -27 107 -27 55 0 73 4 107 27 22 15 51 44 64
+                               65 l24 38 3 1112 2 1113 1113 2 1112 3 38 24 c21 13 50 42 65 64 23 34 27 52
+                               27 107 0 55 -4 73 -27 107 -15 22 -44 51 -65 64 l-38 24 -1112 3 -1113 2 -2
+                               1113 -3 1112 -24 38 c-47 76 -151 113 -239 86z"/>
+                               </g>
+                               </svg>
+                               </div>
+                        </div>
+                        <h4>Хочешь стать<br> частью команды?</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="outro bottom-line-bg">
+            <div class="wrapper">
+                <div class="outro-container">
+                    <div class="outro__docs">
+                        <h2>Документы:</h2>
+                        <div class="outro__docs-box">
+                            <img src="./img/docs-img.png" class="oturo__docs-img" alt="">
+                            <a href="#" class="outro__docs-link">
+                                <span class="link">Смотреть</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="outro__last-project">
+                        <div class="outro__last-project__header">
+                            <h2>Недавние объекты:</h2>
+                            <div class="outro__last-project__header-more">
+                                <a href="#">Смотреть еще 16</a>
+                            </div>
+                        </div>
+                        <div class="outro__last-project__container">
+                            <div class="outro__last-project__box">
+                                <div class="outro__last-project__box-top">
+                                    <p>Объект:</p>
+                                    <a href="#"><h3>Сельмашстройтех производство</h3></a>
+                                    <p>Экспертиза промышленной<br> документации</p>
+                                </div>
+                                <div class="outro__last-project__box-bottom">
+                                    <div class="outro__last-project__date">12 декабря 2017</div><div class="outro__last-project__date-mobile">12.12.2017</div>
+                                    <a href="#" class="outro__last-project__link">
+                                        <span class="link">Подробнее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="outro__last-project__img" style="background-image: url(./img/last-project.png);"><a href="#" class="outro__last-project__img-btn btn btn--small btn--hover-dark">+8 Фото</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+            <div class="wrapper">
+                <div class="footer__menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Выполненные работы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Эксперты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer__descr">© 2018. ЭДЦ “Ресурс”. Тел.: 8 812 702 56 43, 8 903 094 76 43. Адрес: Санкт-Петербург. г. Пушкин, Красносельское шоссе, д. 14/28, лит. АБ, Помещение 3-Н, комната №161.</div>
+                <div class="footer__logo">
+                    <div class="footer__logo-img">
+                        <img src="./img/logo-sign.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

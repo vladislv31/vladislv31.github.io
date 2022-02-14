@@ -1,0 +1,572 @@
+@media only screen and (max-width: 1280px)
+    .wrapper
+        max-width: 984px
+
+    .header
+        &__logo
+            display: none !important
+
+        &__logo-descr
+            display: block !important
+
+        &__feedback
+            margin-left: 20px
+            padding-left: 20px
+
+        &__write-us
+            margin-left: 67px
+
+            &__link
+                display: none
+
+            &::after
+                left: -32px
+
+        &__user
+            display: block
+
+        &__menu-button
+            display: flex
+
+    .top-line-bg
+        top: -322px
+        right: calc(50% - 492px - 500px)
+
+    .menu
+        display: none
+
+    .hero
+        margin-top: 15px
+
+        &-slider
+            &-container, &-nav
+                height: 360px
+
+            &__slide
+                &-img
+                    flex-basis: 65%
+
+                &-text
+                    flex-basis: 35%
+                    padding: 30px
+
+                &-container
+                    height: 360px
+
+                &-btn
+                    margin-top: 30px
+
+    h2
+        font-size: 22px
+        line-height: 1.3
+
+    h3
+        font-size: 17px
+        line-height: 1.3
+
+    .btn
+        font-size: 15px
+        padding: 15px
+
+        &.btn--small
+            padding: 8px 13px
+
+        &:hover
+            padding: 17px
+        
+            &.btn--small
+                padding: 10px 15px
+
+    .advantages
+        padding: 35px 0
+
+        &-container
+            margin: 0 10px
+
+        &__item
+            flex-basis: 32%
+
+            &-digit
+                font-size: 78px
+                margin-left: 10px
+                margin-right: 10px
+
+            &-text
+                font-size: 12px
+
+            &:last-child
+                flex-basis: 36%
+
+    .services
+
+        &__title
+            margin-bottom: 60px
+
+        &-container
+            padding-top: 60px
+            padding-bottom: 30px
+
+        &__item
+            flex-basis: 33.3%
+            margin-bottom: 40px
+
+            &:nth-child(3)
+                &::after
+                    display: none
+
+        &__items
+            margin-bottom: 20px
+
+    .team
+        padding: 60px 0
+
+        &__title
+            margin-bottom: 60px
+
+        &__items
+            width: 100%
+            max-width: 620px
+
+    .bottom-line-bg::before
+        left: -120px
+        bottom: 20px
+
+    .outro
+        padding: 60px 0
+
+        h2
+            margin-bottom: 30px
+
+        &__docs
+            flex-basis: 33%
+            min-width: 33%
+
+            &-link
+                bottom: 20px
+                right: 20px
+
+            &-box
+                height: 240px
+
+                img
+                    width: auto
+                    height: 100%
+
+        &__last-project
+            flex-basis: calc(67% - 20px)
+            min-width: calc(67% - 20px)
+
+            &__header
+                margin-bottom: 30px
+                h2
+                    flex-basis: 48%
+                    margin-bottom: 0
+
+                a
+                    margin-left: 20px
+
+            &__date
+                display: none
+
+            &__date-mobile
+                display: block
+
+            &__box
+                padding: 20px
+                flex-basis: 48%
+
+                p, h3
+                    margin-bottom: 10px
+
+            &__img
+                flex-basis: 52%
+
+                &-btn
+                    right: 20px
+                    bottom: 20px
+
+            &__container
+                height: 240px
+
+    .footer
+        margin-top: 40px
+        margin-bottom: 60px
+
+@media only screen and (max-width: 1000px)
+
+    .wrapper
+        max-width: 800px
+
+    .link
+        padding-bottom: 2px !important
+
+    .phone-mobile
+        display: block
+    
+    .header
+
+        &__logo-descr, &__phone, &__feedback
+            display: none !important
+
+        &__logo-mobile, &__mobile-descr
+            display: block !important
+        
+        &__user, &__search
+            svg path
+                fill: $accent
+
+        &__menu
+            &-button
+                padding-right: 0
+                margin-right: 0
+
+                &::after
+                    display: none
+
+        &__write-us
+            margin-left: 0
+
+            &::after
+               display: none 
+
+        &__search, &__user
+            margin-left: unset
+
+        &__user
+            order: -1
+            margin-right: auto
+            margin-left: 20px
+
+        &__write-us
+            margin-left: auto
+            margin-right: 20px
+
+        &__menu-button
+            order: -1
+
+    .top-line-bg
+        left: 0
+
+    h2
+        font-size: 20px
+
+    .hero
+        &-slider
+            &-container, &-nav
+                height: 320px
+
+            &-nav
+                width: 60%
+
+                &__slide-num
+                    font-size: 28px
+
+                    span
+                        font-size: 20px
+
+                &__line
+                    margin-left: 30px
+
+            &__slide
+                &-img
+                    flex-basis: 60%
+
+                &-text
+                    flex-basis: 40%
+                    padding: 20px
+
+                &-container
+                    height: 320px
+
+                &-btn
+                    margin-top: 30px
+
+    .btn
+        font-size: 15px
+        padding: 10px
+
+        &.btn--small
+            padding: 5px 7px
+
+        &:hover
+            padding: 12px
+        
+            &.btn--small
+                padding: 7px 9px
+
+    .advantages
+        padding: 0
+        padding-top: 30px
+
+        &__item
+            flex-basis: 50%
+            margin-bottom: 30px
+
+            &:nth-child(2)
+                &::after
+                    display: none
+
+    .top-line-bg
+        top: -202px
+
+    .bottom-line-bg::before
+        left: 0
+        top: 0
+        width: 100%
+        height: 70%
+        background: linear-gradient(to right, #4ebe9b, #108db3)
+
+    .services
+        &__title
+            margin-bottom: 30px
+
+        &-container
+            padding: 30px
+
+    .team
+        padding: 30px 0
+        &__title
+            margin-bottom: 30px
+        &__items
+            max-width: none
+                
+    .outro
+        padding: 30px 0
+
+        &-container
+            flex-wrap: wrap
+            justify-content: center
+
+        &__docs
+            flex-basis: 40%
+            min-width: 40%
+            margin-bottom: 40px
+
+        &__last-project
+            flex-basis: 80%
+            min-width: 80%
+            margin-left: 0
+
+    .footer
+        margin-top: 20px
+        margin-bottom: 30px
+        &__menu
+            ul
+                li
+                    margin-right: 0
+                    margin: 0 20px
+                    margin-bottom: 10px
+
+@media only screen and (max-width: 820px)
+    .wrapper
+        max-width: 600px
+
+    .hero
+        &-slider
+            max-width: 400px
+            margin: 0 auto
+
+            &-container
+                height: auto
+
+            &-nav
+                width: 100%
+                height: 250px
+
+                &__slide-num
+                    display: none
+
+                &__arrows
+                    margin-right: 20px
+                    height: 90%
+
+                &__slider-line, &__line
+                    display: none
+
+                &__prev-arrow, &__next-arrow
+                    img
+                        width: auto
+                        height: 25px
+
+            &__slide
+                &-container
+                    flex-wrap: wrap
+                    height: auto
+
+                &-img
+                    flex-basis: 100%
+                    height: 250px
+
+                &-text
+                    flex-basis: 100%
+                    height: auto
+
+    .top-line-bg
+        display: none
+
+    .services
+        &__items
+            flex-wrap: wrap
+
+        &__item
+            flex-basis: 50%
+
+            &:nth-child(3) 
+                &::after
+                    display: block
+
+            &:nth-child(2n)
+                &::after
+                    display: none
+                
+    .team
+        padding-bottom: 0
+        &__items
+            flex-wrap: wrap
+        &__item
+            flex-basis: 50%
+            margin-bottom: 30px
+
+    .outro
+        &-container
+            max-width: 500px
+            margin: 0 auto
+
+        &__docs
+            flex-basis: 100%
+
+        &__last-project
+            flex-basis: 100%
+            &__box
+                flex-basis: 55%
+            &__img
+                flex-basis: 45%
+            &__link
+                margin-bottom: 2px
+
+
+@media only screen and (max-width: 620px)
+    
+    .hero
+        &-slider
+            max-width: 340px
+            &__slide
+                &-img
+                    height: 200px
+            &-nav
+                height: 200px
+
+    h2
+        font-size: 16px
+
+    .btn
+        font-size: 14px
+
+    .advantages
+        &__item
+            flex-basis: 100% !important
+            margin-bottom: 30px
+            padding-bottom: 30px
+            position: relative
+            &::after
+                display: none
+            &::before
+                content: ''
+                width: 100%
+                height: 1px
+                bottom: 0
+                left: 0
+                position: absolute
+                background-color: rgba(255, 255, 255, 0.3)
+            &:last-child
+                &::before
+                    display: none
+
+    .services
+
+        &__title
+            text-align: left
+
+        &__items
+            justify-content: start
+
+        &__item
+            flex-basis: 100%
+            text-align: left
+            display: flex
+            align-items: center
+
+            &::after
+                display: none !important
+
+            &-icon
+                margin-bottom: 0
+                margin-right: 20px
+
+            &-text
+                margin: 0
+                max-width: 210px
+
+        &__button
+            width: 100%
+
+    h4
+        font-size: 12px
+
+    .team
+        &__item
+            padding: 0 10px
+            box-sizing: border-box
+            flex-basis: 50% !important
+            width: 50%
+            &-img
+                border: 2px solid #fff
+                img
+                    width: 70px
+                    height: 70px
+                    border: 2px solid #fff
+                    box-shadow: unset
+                    position: relative
+                    bottom: -1px
+            &-button
+                border: 4px solid #fff
+                &__icon
+                    width: 64px
+                    height: 64px
+                    border: 4px solid #fff
+            p
+                font-size: 12px
+
+    
+
+    .outro
+        &__last-project
+            height: auto
+            &__container
+                flex-wrap: wrap
+                height: auto
+            &__box
+                flex-basis: 100%
+                height: auto
+            &__img
+                flex-basis: 100%
+                order: -1
+                height: 200px
+            &__header
+                flex-direction: column
+                h2
+                    margin-bottom: 10px
+
+        h2
+            text-align: center
+
+    .footer
+        &__menu
+            margin-bottom: 25px
+            ul
+                li
+                    a
+                        font-size: 12px
+        &__descr
+            font-size: 13px
+            margin-bottom: 30px
