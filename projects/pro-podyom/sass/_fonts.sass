@@ -1,0 +1,12 @@
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('truetype')
+
+@include font('Montserrat', normal, 100, '../fonts/Montserrat/Montserrat-Thin.ttf')
+@include font('Montserrat', normal, 200, '../fonts/Montserrat/Montserrat-Light.ttf')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat/Montserrat-Regular.ttf')
+@include font('Montserrat', normal, 700, '../fonts/Montserrat/Montserrat-Bold.ttf')
+@include font('Russo One', normal, 400, '../fonts/Russo_One/RussoOne-Regular.ttf')

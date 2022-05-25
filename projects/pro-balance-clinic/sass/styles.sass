@@ -1,0 +1,461 @@
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('truetype')
+
+@include font('Montserrat', normal, 100, '../fonts/Montserrat/Montserrat-Thin.ttf')
+@include font('Montserrat', normal, 200, '../fonts/Montserrat/Montserrat-Light.ttf')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat/Montserrat-Regular.ttf')
+@include font('Montserrat', normal, 700, '../fonts/Montserrat/Montserrat-Bold.ttf')
+@include font('Caveat', normal, 700, '../fonts/Caveat/Caveat-Bold.ttf')
+    
+body
+    margin: 0
+    padding: 0
+    min-width: 320px
+    overflow-x: hidden
+    font-family: 'Montserrat', sans-serif
+    line-height: 1.5
+
+.container
+    width: 100%
+    max-width: 1068px
+    margin: 0 auto
+    padding: 0 15px
+    box-sizing: border-box
+
+header
+    height: 970px
+    background-image: url(../img/header-pattern.jpg)
+    background-size: cover
+    font-size: 18px
+    position: relative
+
+    .container
+        height: 100%
+
+    &::before
+        content: ''
+        position: absolute
+        width: 650px
+        height: 840px
+        background-image: url(../img/header-photo-1.jpg)
+        background-size: cover
+        right: calc(100% - 50% + 534px - 420px)
+        top: 0
+        z-index: 1
+
+    &::after
+        content: ''
+        position: absolute
+        width: 800px
+        height: 760px
+        background-image: url(../img/header-photo-2.jpg)
+        background-size: cover
+        top: 130px
+        right: calc(50% - 534px - 100px)
+        z-index: 1
+
+    & > *
+        position: relative
+        z-index: 2
+
+    .text
+        height: calc(100% - 230px)
+        display: flex
+        justify-content: flex-end
+        color: #fff
+        flex-direction: column
+
+        h1
+            font-size: 64px
+            margin: 0
+
+        p
+            font-family: 'Caveat', sans-serif
+            font-size: 64px
+            margin: 0
+            width: 100%
+            text-align: right
+
+
+
+nav
+    height: 130px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    ul
+        margin: 0
+        padding: 0
+        display: flex
+
+        li
+            list-style-type: none
+            margin-left: 50px
+
+        a
+            color: #000
+            text-decoration: none
+
+
+
+section
+    margin: 100px 0
+
+    &.section-bg
+        background-color: #F9DAE5
+        padding: 75px 0
+
+    h2
+        font-size: 34px
+        text-align: center
+        margin: 0
+        margin-bottom: 70px
+
+.uslugi
+    display: flex
+    flex-wrap: wrap
+
+    &-block
+        flex-basis: 33%
+
+        h3
+            font-weight: 600
+            font-size: 20px
+            margin: 0
+            margin-bottom: 20px
+
+        ul
+            margin: 0
+            padding: 0
+
+            li
+                list-style-type: none
+                margin-bottom: 20px
+                color: #676767
+
+
+    
+.doctors
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin: 0 -10px
+
+    &-block
+        flex: 1 auto
+        flex-basis: calc(33% - 20px)
+        background-color: #fff
+        margin: 0 10px
+        padding: 10px
+        padding-top: 45px
+        padding-bottom: 40px
+        box-sizing: border-box
+        text-align: center
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+        img
+            width: 100%
+            margin-bottom: 15px
+
+        h3
+            font-weight: 600
+            font-size: 20px
+            margin: 0
+            margin-bottom: 10px
+
+        p
+            color: #5a5a5a
+            margin: 0
+            margin-bottom: 25px
+            font-size: 18px
+
+        &:nth-child(2)
+            img
+                margin-bottom: 25px
+
+            p
+                margin-bottom: 50px
+
+a.btn
+    display: inline-block
+    text-decoration: none
+    background-color: #58773b
+    padding: 12px 25px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: #fff
+
+.advantages
+    h2
+        font-weight: normal
+
+    &-blocks
+
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        margin: 0 -15px
+
+    &-block
+        flex: 1 auto
+        flex-basis: calc(33% - 30px)
+        margin: 0 15px
+        padding: 10px
+        padding-top: 45px
+        padding-bottom: 40px
+        box-sizing: border-box
+        text-align: center
+
+        h3
+            font-size: 18px
+            font-weight: normal
+
+
+.prices
+    &-block
+        display: flex
+        align-items: flex-end
+        position: relative
+        margin-bottom: 120px
+
+        img
+            width: 65%
+        
+    &-text
+        background-color: #F9DAE5
+        width: 42%
+        position: absolute
+        right: 50px
+        bottom: -30px
+        padding: 35px
+        box-sizing: border-box
+        text-align: center
+
+        h3
+            margin: 0
+            margin-bottom: 15px
+            font-size: 24px
+
+        span
+            font-weight: bold
+            font-size: 18px
+            margin-bottom: 25px
+            display: inline-block
+
+        p
+            margin: 0
+            margin-bottom: 15px
+
+        a
+            display: inline-block
+            margin-top: 15px
+
+    &-block
+        &:nth-child(2)
+            img
+                margin-left: calc(35% - 50px)
+
+            .prices-text
+                left: 0
+                bottom: -30px
+
+
+.banner
+    height: 670px
+    background-image: url(../img/banner.jpg)
+    background-repeat: no-repeat
+    background-color: #eaeaea
+
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: flex-end
+
+    &-text
+        text-align: center
+
+        h2
+            font-weight: normal
+            line-height: 2
+            font-size: 36px
+            margin-bottom: 50px
+
+
+.images
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+    line-height: 0
+
+    img
+        width: 100%
+        margin-bottom: 30px
+
+    &-small
+        flex-basis: calc(50% - 30px)
+        margin: 0 15px
+
+    &-big
+        flex-basis: calc(100% - 30px)
+        margin: 0 15px
+
+
+.reviews
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin: 0 -10px
+
+    &-block
+        flex: 1 auto
+        flex-basis: calc(33% - 20px)
+        background-color: #fff
+        margin: 0 10px
+
+        img
+            margin-right: 10px
+
+        span
+            font-size: 20px
+
+        p
+            color: #676767
+
+
+footer
+    background-color: #58773b
+
+.footer
+    height: 230px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    ul
+        margin: 0
+        padding: 0
+
+        li
+            list-style-type: none
+            margin-bottom: 10px
+            font-size: 18px
+            color: #fff
+
+            img
+                position: relative
+                margin-left: 15px
+                bottom: -5px
+        
+        a
+            color: #fff
+            text-decoration: none
+
+@media screen and (max-width: 1068px)
+    
+    header::before
+        right: calc(100% - 200px)
+
+    header::after
+        left: 130px
+        top: 200px
+        height: 690px
+
+    nav
+        height: 180px
+
+        .logo
+            height: 55px
+
+        ul
+            flex-wrap: wrap
+
+        a
+            font-size: 16px
+
+    header .text
+        height: calc(100% - 400px)
+
+    header .text h1
+        font-size: 38px
+
+    header .text p
+        font-size: 50px
+
+    .uslugi
+        justify-content: center
+
+    .uslugi-block
+        flex-basis: 50%
+        text-align: center
+        margin-bottom: 30px
+
+    .doctors
+        justify-content: center
+
+    .doctors-block
+        flex-basis: calc(50% - 20px)
+        text-align: center
+        margin-bottom: 30px
+
+@media screen and (max-width: 800px)
+
+    .prices-block img
+        display: none
+
+    .prices-text
+        position: relative
+        width: 100%
+        max-width: 400px
+        margin: 0 auto
+        left: 0
+        top: 0
+
+    .prices-block
+        margin-bottom: 40px
+
+    .advantages
+        justify-content: center
+
+    .advantages-block
+        flex-basis: calc(50% - 20px)
+        text-align: center
+
+    .reviews
+        justify-content: center
+
+    .reviews-block
+        flex-basis: calc(50% - 20px)
+        text-align: center
+        margin-bottom: 30px
+
+    .footer
+        flex-direction: column
+        height: auto
+        padding: 30px 0
+
+        ul
+            margin-top: 35px
+
+    section
+        margin: 70px 0
+
+        h2
+            font-size: 24px
+
+@media screen and (max-width: 530px)
+    .images-small
+        flex-basis: calc(100% - 30px)
+
+    .reviews-block
+        flex-basis: calc(100% - 20px)
+
+    .doctors-block
+        flex-basis: calc(100% - 20px)
+
+    .uslugi-block
+        flex-basis: calc(100% - 20px)

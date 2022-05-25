@@ -1,0 +1,628 @@
+@import "fonts"
+@import "vars"
+
+
+.hero-form, .bonus
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto
+        padding-left: 10px
+        padding-right: 10px
+    .row
+        margin-left: -10px
+        margin-right: -10px
+
+
+
+*
+    outline: none
+    &:focus
+        outline: none
+
+body
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    background-color: #f0f0f0
+    overflow-x: hidden
+    min-width: 320px
+    line-height: 1.5
+    letter-spacing: 0.5px
+
+.mobile-menu-btn
+    display: none
+    cursor: pointer
+    img
+        height: 30px
+        width: auto
+
+.btn
+    display: inline-block
+    background-color: $accent-color
+    border: none
+    border-radius: 5px
+    padding: 15px 25px
+    font-size: 15px
+    font-family: 'Montserrat', sans-serif
+    color: #fff
+    cursor: pointer
+    box-shadow: 0px -6px 0px rgba(0, 0, 0, 0.3) inset
+    text-decoration: none
+    &:hover
+        background-color: darken($accent-color, 5%)
+
+.logo
+    display: flex
+    align-items: center
+    color: #000
+    text-decoration: none
+    &__img
+        height: 50px
+        width: auto
+    &__text
+        margin-left: 15px
+        display: flex
+        flex-direction: column
+        span
+            line-height: 1.2
+            &:first-child
+                font-size: 13px
+            &:last-child
+                font-size: 20px
+                font-weight: bold
+
+.header
+    background-color: #fff
+    &-container
+        height: 100px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__menu
+        height: 100%
+        ul
+            display: flex
+            height: 100%
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                position: relative
+                height: 100%
+                display: flex
+                align-items: center
+                padding: 0 15px
+                &::before
+                    content: ''
+                    width: 100%
+                    height: 6px
+                    background-color: $accent-color
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    display: none
+                a
+                    color: #000
+                    text-decoration: none
+                &.current
+                    &::before
+                        display: block
+
+.mobile-menu
+    padding: 15px 0
+    display: none
+    background-color: #fff
+    border-top: 1px solid lighten(#000, 93%)
+    &.opened
+        display: block
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        line-height: 2.5
+        li
+            a
+                font-size: 15px
+                text-decoration: none
+                color: #000
+                    
+.hero
+    width: 100%
+    height: 680px
+    background-image: url(../img/bg.jpg)
+    background-size: cover
+    background-position: center 0
+    position: relative
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        background-color: rgba(0, 0, 0, 0.6)
+    > *
+        position: relative
+        z-index: 1
+    &-container
+        height: 100%
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        h1
+            font-size: 36px
+            text-align: center
+            margin: 0
+            margin-bottom: 20px
+        .home-icon
+            width: 40px
+            height: 40px
+            margin-bottom: 20px
+        p
+            margin: 0
+            margin-bottom: 70px
+            font-size: 18px
+            text-align: center
+            line-height: 2
+            width: 100%
+            max-width: 880px
+        .hero-form
+            width: 100%
+            background-color: #fff
+            box-shadow: 5px 0px 50px rgba(0, 0, 0, 0.5)
+            border-radius: 5px
+            padding: 20px
+            padding-bottom: 0
+            color: #000
+            .form-input, .form-select select
+                width: 100%
+                background-color: #d4d4d4
+                border: none
+                border-radius: 5px
+                padding: 20px
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                color: #4c4c4c
+            .form-select
+                position: relative
+                select
+                    appearance: none
+                &::after
+                    content: ''
+                    position: absolute
+                    right: 15px
+                    top: calc(50% - 8px)
+                    width: 17px
+                    height: 13px
+                    background-image: url(../img/dropdown.svg)
+                    background-size: cover
+            .form-button
+                width: 100%
+                padding: 20px
+            .form-input, .form-button, .form-select
+                margin-bottom: 20px
+
+.section
+    padding: 45px 0
+    &.bg-white
+        background-color: #fff
+    &-title
+        margin-bottom: 30px
+        text-align: center
+        h2
+            margin: 0
+            margin-bottom: 5px
+            font-size: 24px
+        .home-icon
+            display: inline-block
+            position: relative
+            height: 30px
+            img
+                width: 30px
+                height: 30px
+            &::before, &::after
+                content: ''
+                width: 67px
+                height: 2px
+                position: absolute
+                background-color: $accent-color
+                top: calc(50% - 2px)
+            &::before
+                left: -80px
+            &::after
+                right: -80px
+
+.footer
+    background-color: #141414
+    color: #fff
+    padding: 50px 0
+    h3
+        font-size: 18px
+        margin: 0
+        margin-bottom: 20px
+    p
+        line-height: 1.8
+        margin: 0
+        margin-bottom: 20px
+        font-size: 15px
+    .footer-about
+        .social-medias
+            a
+                margin-right: 15px
+                &:last-child
+                    margin-right: 0
+                img
+                    width: 32px
+                    height: 32px
+    .footer-menu
+        ul
+            margin: 0
+            padding: 0
+            columns: 2
+            list-style-type: none
+            li
+                margin-bottom: 10px
+                a
+                    color: #fff
+                    text-decoration: none
+                    font-size: 15px
+    .footer-contacts
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                margin-bottom: 13px
+                padding-left: 26px
+                font-size: 15px
+                position: relative
+                &::before
+                    content: ''
+                    width: 14px
+                    height: 14px
+                    position: absolute
+                    background-size: cover
+                    left: 0
+                    top: 3px
+                &.address
+                    &::before
+                        background-image: url(../img/contacts-icons/location.svg)
+                &.email
+                    &::before
+                        top: 4px
+                        background-image: url(../img/contacts-icons/email.svg)
+                &.phone
+                    &::before
+                        background-image: url(../img/contacts-icons/phone.svg)
+
+.copyright
+    background-color: #0d0d0d
+    padding: 30px 0
+    p
+        margin: 0
+        color: #fff
+        font-size: 15px
+
+
+#advantages
+    padding-bottom: 5px
+    .advantage-item
+        text-align: center
+        margin-bottom: 40px
+        img
+            width: auto
+            height: 65px
+            margin-bottom: 15px
+        p
+            margin: 0
+            font-weight: 500
+            font-size: 18px
+            line-height: 1.6
+            color: lighten(#000, 20%)
+
+.services
+    padding-bottom: 15px
+    .service-item
+        height: calc(100% - 30px)
+        background-color: #fff
+        box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.3)
+        display: flex
+        flex-direction: column
+        margin-bottom: 30px
+        img
+            width: 100%
+        .item-text
+            padding: 18px
+            padding-top: 14px
+            line-height: 1
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            flex-grow: 1
+            h3
+                margin: 0
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 1.5
+                color: lighten(#000, 15%)
+            .item-price
+                margin-bottom: 15px
+                span
+                    font-weight: 600
+            a.get-price
+                margin-bottom: 15px
+                display: block
+                color: $accent-color
+                font-size: 15px
+            .btn
+                width: auto
+
+    &.add-servs
+        .service-item
+            .item-text
+                a.get-price
+                    color: #fff
+                    margin-bottom: 0
+                    text-align: center
+                    padding: 17px 15px
+
+.bonus
+    padding: 80px 0
+    background-image: url(../img/bonus.jpg)
+    background-size: cover
+    background-position: center
+    position: relative
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        background-color: rgba(0, 0, 0, 0.82)
+    > *
+        position: relative
+        z-index: 1
+    h2
+        font-size: 24px
+        color: #fff
+        text-align: center
+        margin: 0
+        margin-bottom: 45px
+        span
+            color: $accent-color
+    .bonus-form
+        width: 100%
+        background-color: #fff
+        box-shadow: 5px 0px 50px rgba(0, 0, 0, 0.5)
+        border-radius: 5px
+        padding: 20px
+        padding-bottom: 0
+        color: #000
+        margin-bottom: 15px
+        .form-input
+            width: 100%
+            background-color: #d4d4d4
+            border: none
+            border-radius: 5px
+            padding: 20px
+            font-size: 16px
+            font-family: 'Montserrat', sans-serif
+            color: #4c4c4c
+        .form-button
+            width: 100%
+            padding: 20px
+        .form-input, .form-button
+            margin-bottom: 20px
+    .bonus-checkbox
+        color: #fff
+        label
+            a
+                color: $accent-color
+
+#reviews
+    .review-item
+        text-align: center
+        .review-image
+            width: 100px
+            height: 100px
+            border-radius: 5em
+            overflow: hidden
+            margin: 0 auto
+            margin-bottom: 25px
+            img
+                width: 100%
+        .review-author 
+            margin: 0
+            margin-bottom: 10px
+        .review-text
+            width: 100%
+            max-width: 880px
+            margin: 0 auto
+            line-height: 2.25
+
+    .reviews-slider
+        position: relative
+        padding: 0 60px
+        .slider-arrow
+            width: 28px
+            height: 35px
+            background-image: url(../img/slider-arrow.svg)
+            background-size: cover
+            position: absolute
+            top: calc(50% + 20px)
+            cursor: pointer
+        .slider-left
+            transform: rotate(180deg)
+            left: 0
+        .slider-right
+            right: 0
+
+#faq
+    .faq-list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        li
+            margin-bottom: 20px
+            padding-left: 35px
+            position: relative
+            cursor: pointer
+            line-height: 2.25
+            &::before
+                content: ''
+                width: 20px
+                height: 16px
+                position: absolute
+                background-image: url(../img/faq-arrow.svg)
+                background-size: cover
+                left: 0
+                top: 8px
+            p
+                line-height: 2.25
+                color: #787878
+                display: none
+            &.active
+                p
+                    display: block
+
+#portfolio
+    .portfolio-item
+        line-height: 0
+        margin-bottom: 30px
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2)
+        img
+            width: 100%
+    .portfolio-pagination
+        display: flex
+        justify-content: center
+        margin: 0
+        padding: 0
+        list-style-type: none
+        flex-wrap: wrap
+        li
+            margin: 0 10px
+            width: 45px
+            height: 45px
+            border: 1px solid $accent-color
+            margin-bottom: 20px
+            &.current
+                background-color: $accent-color
+                a
+                    color: #fff
+            a
+                text-decoration: none
+                font-size: 19px
+                color: $accent-color
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 100%
+
+#reviews-page
+    .review-item
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 30px
+        .item-img
+            flex-basis: 100px
+            width: 100px
+            height: 100px
+            border-radius: 5em
+            overflow: hidden
+            margin-bottom: 25px
+            margin-right: 40px
+            img
+                width: 100%
+                min-height: 100%
+        .item-content
+            flex-basis: calc(100% - 140px)
+        .item-mark
+            margin-bottom: 20px
+            img
+                width: 25px
+                height: 25px
+                margin-right: 6px
+                &:last-child
+                    margin-right: 0
+        .item-author
+            font-size: 18px
+            margin: 0
+            margin-bottom: 15px
+        .item-text
+            margin: 0
+            line-height: 2.3
+
+#about
+    p
+        line-height: 2.25
+    a
+        color: $accent-color
+
+#contacts
+    ul.contacts-list
+        margin: 0
+        margin-bottom: 30px
+        padding: 0
+        list-style-type: none
+        li
+            margin-bottom: 13px
+            padding-left: 40px
+            position: relative
+            &::before
+                content: ''
+                width: 18px
+                height: 18px
+                position: absolute
+                background-size: cover
+                left: 0
+                top: 3px
+            &.address
+                &::before
+                    background-image: url(../img/contacts-icons/location-black.svg)
+            &.email
+                &::before
+                    background-image: url(../img/contacts-icons/email-black.svg)
+            &.phone
+                &::before
+                    background-image: url(../img/contacts-icons/phone-black.svg)
+    form.contacts-form
+        h3
+            margin: 0
+            margin-bottom: 15px
+        p
+            font-size: 14px
+            margin: 0
+            margin-bottom: 20px
+            color: lighten(#000, 40%)
+        input
+            display: block
+            width: 100%
+            max-width: 420px
+            margin-bottom: 20px
+            background-color: #d4d4d4
+            border: none
+            border-radius: 5px
+            padding: 20px
+            font-size: 16px
+            font-family: 'Montserrat', sans-serif
+            color: #4c4c4c
+        textarea
+            display: block
+            width: 100%
+            max-width: 700px
+            height: 250px
+            margin-bottom: 20px
+            background-color: #d4d4d4
+            border: none
+            border-radius: 5px
+            padding: 20px
+            font-size: 16px
+            font-family: 'Montserrat', sans-serif
+            color: #4c4c4c
+        button
+            padding: 20px 70px
+
+@import "media"

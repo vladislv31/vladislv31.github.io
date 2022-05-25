@@ -1,0 +1,307 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+	@font-face
+		font-family: $font-family
+		font-weight: $weight
+		font-style: $style
+
+		@if $asset-pipeline == true 
+			src: font-url('#{$file-path}.eot')
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
+		@else
+			src: url('#{$file-path}.eot')
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
++font-face("sf-pro", "../fonts/SFProDisplay-Regular")
++font-face("sf-pro", "../fonts/SFProDisplay-Bold", bold)
++font-face("acme", "../fonts/Acme-Regular")
+
+body
+    margin: 0
+    padding: 0
+    min-width: 320px
+    overflow-x: hidden
+    line-height: 1.5
+    font-size: 18px
+    font-family: 'sf-pro', sans-serif
+
+.main
+    width: 100%
+    min-height: 100vh
+    background-image: url(../img/bg.jpg)
+    background-size: cover
+    position: relative
+    padding-top: 100px
+    padding-bottom: 20px
+
+    &__icons
+        position: absolute
+        z-index: 1
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+
+    &__container
+        position: relative
+        z-index: 2
+        display: flex
+
+    &__phone
+        flex-basis: 590px
+        display: flex
+        align-items: center
+        justify-content: center
+        &-img
+            height: 926px
+        &-img--mobile
+            height: 444px
+            display: none
+
+    &__text
+        flex-basis: calc(100% - 590px)
+        text-align: center
+        padding-top: 20px
+        padding-right: 100px
+
+        h1, h2
+            margin: 0
+            padding: 0
+            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.64))
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: #fff
+            display: table
+            margin: 0 auto
+            line-height: 1
+
+        h1
+            font-size: 160px
+            margin-bottom: 50px
+
+        h2
+            font-size: 67px
+            margin-bottom: 10px
+
+    &__form
+        margin: 0 auto
+
+    &__download
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 50px
+
+        span
+            font-size: 36px
+            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.64))
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: #fff
+            display: table
+            margin-right: 32px
+
+        a
+            margin-right: 17px
+            img
+                height: 40px
+            &:last-child
+                margin-right: 0
+                img
+                    height: 29px
+
+.form
+    max-width: 760px
+    width: 100%
+    background: rgba(255, 255, 255, 0.1)
+    backdrop-filter: blur(25px)
+    border-radius: 40px
+    border: 3px solid rgba(#fff, 0.7)
+    padding: 60px 20px
+
+    &__label, &__input, &__button
+        display: block
+        max-width: 500px
+        width: 100%
+        margin: 0 auto
+        box-sizing: border-box
+
+    &__label
+        text-align: left
+        color: #fff
+        margin-bottom: 5px
+        font-family: 'acme', sans-serif
+
+    &__input
+        padding: 20px
+        border: 1px solid #BCBEC0
+        border-radius: 10px
+        color: #BCBEC0
+        margin-bottom: 15px
+        font-family: 'acme', sans-serif
+        &::placeholder
+            color: #BCBEC0
+
+    &__button
+        background-color: #BD0C47
+        border-radius: 10px
+        padding: 15px 20px
+        font-size: 22px
+        border: none
+        outline: none
+        color: #fff
+        margin-top: 40px
+        cursor: pointer
+
+        &:hover
+            background-color: darken(#BD0C47, 3%)
+
+    &__title
+        font-size: 60px
+        text-transform: uppercase
+        margin: 0 auto
+        margin-bottom: 20px
+        line-height: 1
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.64))
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        color: #fff
+        display: table
+
+.icon
+    background-size: cover
+    position: absolute
+
+.icon--big-blue
+    background-image: url(../img/bg-icons/big-blue.svg)
+    width: 400px
+    height: 400px
+    bottom: 50px
+    left: 60px
+
+.icon--big-purple
+    background-image: url(../img/bg-icons/big-purple.svg)
+    width: 700px
+    height: 700px
+    bottom: 0
+    right: 0
+
+.icon--mid-orange
+    background-image: url(../img/bg-icons/mid-orange.svg)
+    width: 200px
+    height: 200px
+    left: 120px
+    top: 60px
+
+.icon--small-orange
+    background-image: url(../img/bg-icons/small-orange.svg)
+    width: 100px
+    height: 100px
+    right: 120px
+    top: 60px
+
+.icon--center
+    background-image: url(../img/bg-icons/center.svg)
+    width: 350px
+    height: 307px
+    left: calc(50% - 175px - 140px)
+    top: calc(50% - 153px + 70px)
+
+.icon--small-purple
+    background-image: url(../img/bg-icons/small-purple.svg)
+    width: 100px
+    height: 100px
+    bottom: 20px
+    right: -40px
+    display: none
+
+@media only screen and (max-width: 1400px)
+    .main__text h1
+        font-size: 70px
+
+    .main__text h2
+        font-size: 40px
+
+    .form
+        max-width: 620px
+
+    .form__title
+        font-size: 48px
+
+@media only screen and (max-width: 1100px)
+    .main__container
+        flex-direction: column-reverse
+
+    .main__text
+        padding-right: 0
+        flex-basis: calc(100% - 40px)
+
+    .form
+        width: calc(80%)
+
+    .main__download
+        margin-bottom: 70px
+
+    .icon--big-blue
+        bottom: 50px
+        left: -100px
+
+    .icon--big-purple
+        background-image: url(../img/bg-icons/big-purple-mobile.svg)
+        right: -400px
+        top: 400px
+
+    .icon--mid-orange
+        left: -100px
+
+    .icon--small-orange
+        right: 20px
+
+    .icon--small-purple
+        display: block
+
+@media only screen and (max-width: 750px)
+    .main__phone-img--mobile
+        display: block
+
+    .main__phone-img
+        display: none
+
+    .main__download
+        margin-bottom: 40px
+
+    .main__phone
+        display: block
+        margin: 0 auto
+
+    .main__text h2
+        font-size: 19px
+
+    .main__text h1
+        font-size: 34px
+
+    .form__title
+        font-size: 36px
+        margin-bottom: 10px
+
+    .form
+        padding: 30px 20px
+
+    .form__input
+        padding: 12px
+        font-size: 16px
+        margin-bottom: 6px
+
+    .form__button
+        font-size: 16px
+        padding: 15px
+        margin-top: 30px
+
+    .main__download span
+        font-size: 20px
+
+    .main__download a
+        img
+            height: 27px
+        &:last-child
+            img
+                height: 20px
